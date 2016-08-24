@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Global button styles
+   ========================================================================== */
+
+$btn-bg-green: $green;
+
+.button {
+  border-radius: 5px;
+  background-color: $btn-bg-green;
+  border: 1px solid $btn-bg-green;
+  color: $white;
+  display: inline-block;
+  font-size: rem(14px);
+  font-weight: 400;
+  padding: 24px 47px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $white;
+  }
+
+  &--full {
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+header {
+  min-height: rem(90px);
+}
+
+.header-container {
+  @extend %clearfix;
+}
+
+.branding {
+  max-width: 100%;
+  margin-right: rem(60px);
+
+  @include susy-media(desktop) {
+    display: inline-block;
+    margin: 0;
+    padding: 24px 0;
+    vertical-align: middle;
+    width: 25%;
+  }
+
+  .site-title {
+    @extend .visuallyhidden;
+  }
+}
+
+.site-image {
+  a {
+    display: block;
+    line-height: 0;
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+// Navigation && Serch form
+.branding-bottom {
+  bottom: 0;
+  height: 100%;
+  left: 100%;
+  overflow-y: auto;
+  padding: rem(10px 15px);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  .box-search {
+    padding: 10px 0;
+  }
+
+  @include susy-media(desktop) {
+    background-color: transparent;
+    display: inline-block !important;
+    float: right;
+    left: 0 !important;
+    overflow: visible;
+    position: static;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0;
+  }
+}

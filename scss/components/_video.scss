@@ -1,0 +1,151 @@
+.block-video_hero {
+  @include susy-media(tablet) {
+    margin-bottom: 20px;
+  }
+
+  .vidyard-video {
+    padding-bottom: 0;
+
+    .vidyard_player > span {
+      position: relative !important;
+      height: 18.75rem !important;
+      width: 100% !important;
+      -webkit-transform: translate(-50%,0px);
+      -ms-transform: translate(-50%,0px);
+      transform: translate(-50%,0px);
+      min-width: 64.3125rem;
+      left: 50%;
+
+      @include susy-media(tablet) {
+        min-height: 25rem;
+        min-width: 85.75rem;
+      }
+
+      @include susy-media(desktop) {
+        min-height: 35rem;
+        min-width: 120.0625rem;
+      }
+    }
+  }
+
+  .vidyard-banner {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      background-color: rgba(0,0,0,0.2);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+
+  .overlay-text {
+    color: $white;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    z-index: 3;
+
+    @include susy-media(tablet) {
+      width: 70%;
+    }
+  }
+}
+
+.vidyard-video {
+  height: auto;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  &:before {
+    background-color: rgba(0,0,0,0.7);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .vidyard_player > span {
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+.vidyard-banner {
+  @include susy-media(desktop) {
+    height: rem(560px);
+    padding-bottom: 0;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+.block-video {
+  height: rem(560px);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &__content {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    z-index: 3;
+  }
+
+  &__text {
+    text-transform: uppercase;
+
+    &__small {
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
+
+    &__big {
+      font-size: 70px;
+      color: $blue;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    span {
+      border: 7px solid $blue;
+      position: relative;
+      width: 68px;
+      border-radius: 50%;
+      height: 68px;
+      font-size: 28px;
+      text-align: center;
+      color: $blue;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

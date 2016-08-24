@@ -1,0 +1,88 @@
+// Helper classes
+
+.font {
+  &--small {
+    font-size: rem(14px);
+  }
+
+  &--tiny {
+    font-size: rem(13px);
+  }
+}
+
+.granite-green {
+  color: $gray-89;
+}
+
+.mist-gray {
+  color: $gray-c4;
+}
+
+.blue {
+  color: $blue;
+}
+
+.white {
+  color: $white;
+}
+
+.bg {
+  &--white {
+    background-color: $white;
+  }
+
+  &--light-tan {
+    background-color: $gray-f4;
+  }
+
+  &--light-grey {
+    background-color: $teal-f3;
+  }
+
+  &--slate-grey {
+    background-color: $teal-dc;
+  }
+
+  &--teal {
+    background-color: $teal;
+  }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+%icons {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-size: inherit;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:before {
+    @extend %icons;
+  }
+}
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+.icon-twitter:before {
+  content: '\f099';
+}
+
+.icon-youtube-play:before {
+  content: '\f16a';
+}

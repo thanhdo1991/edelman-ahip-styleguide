@@ -1,0 +1,46 @@
+.block-img-text {
+  @extends %clearfix;
+  background: $green;
+  margin-bottom: 10px;
+  width: 555px;
+
+  &__image {
+    line-height: 0;
+    position: relative;
+    width: 262px;
+
+    img {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 262px;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+  }
+
+  &__title {
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  &--image {
+    .block-img-text__content {
+      width: calc(100% - 262px);
+    }
+  }
+}
