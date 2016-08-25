@@ -1,50 +1,36 @@
 // Helper classes
 
-.font {
-  &--small {
-    font-size: rem(14px);
-  }
-
-  &--tiny {
-    font-size: rem(13px);
-  }
-}
-
-.granite-green {
-  color: $gray-89;
-}
-
-.mist-gray {
-  color: $gray-c4;
-}
-
-.blue {
-  color: $blue;
-}
-
-.white {
-  color: $white;
-}
-
 .bg {
   &--white {
     background-color: $white;
   }
 
-  &--light-tan {
-    background-color: $gray-f4;
+  &--blue-dark {
+    background-color: $blue-dark;
   }
 
-  &--light-grey {
-    background-color: $teal-f3;
+  &--blue {
+    background-color: $blue;
   }
 
-  &--slate-grey {
-    background-color: $teal-dc;
+  &--green {
+    background-color: $green;
   }
 
-  &--teal {
-    background-color: $teal;
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &--blue-light {
+    background-color: $blue-light;
+  }
+
+  &--green-light {
+    background-color: $green-light;
+  }
+
+  &--mercury {
+    background-color: $gray-e8;
   }
 }
 
@@ -59,30 +45,30 @@
   width: 1px;
 }
 
-%icons {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-size: inherit;
-  font: normal normal normal 14px/1 FontAwesome;
-  text-rendering: auto;
-}
+// %icons {
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   display: inline-block;
+//   font-size: inherit;
+//   font: normal normal normal 14px/1 FontAwesome;
+//   text-rendering: auto;
+// }
 
-[class^='icon-'],
-[class*=' icon-'] {
-  &:before {
-    @extend %icons;
-  }
-}
+// [class^='icon-'],
+// [class*=' icon-'] {
+//   &:before {
+//     @extend %icons;
+//   }
+// }
 
-.icon-facebook:before {
-  content: '\f09a';
-}
+// .icon-facebook:before {
+//   content: '\f09a';
+// }
 
-.icon-twitter:before {
-  content: '\f099';
-}
+// .icon-twitter:before {
+//   content: '\f099';
+// }
 
-.icon-youtube-play:before {
-  content: '\f16a';
-}
+// .icon-youtube-play:before {
+//   content: '\f16a';
+// }

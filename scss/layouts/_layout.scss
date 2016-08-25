@@ -10,7 +10,7 @@
 
 //Enable font-smoothing
 html {
-  @include helvetica;
+  @include faricynew-light;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $text-color;
@@ -23,4 +23,5 @@ body {
   // Disable in production mode;
   // @include show-breakpoints;
   text-size-adjust: none;
+  font-size: 22px;
 }
