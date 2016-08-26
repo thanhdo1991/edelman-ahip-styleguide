@@ -6,7 +6,7 @@ $heigh-img: 262px;
   background-color: $green;
   margin-bottom: 30px;
   border-radius: 9px;
-  overflow: hidden;
+
 
   &__image {
     line-height: 0;
@@ -20,6 +20,7 @@ $heigh-img: 262px;
       position: absolute;
       right: 0;
       top: 0;
+      border-radius: 0 9px 9px 0;
     }
   }
 

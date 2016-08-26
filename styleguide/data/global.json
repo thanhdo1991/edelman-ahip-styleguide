@@ -82,6 +82,14 @@
     {
       "name":"block-image-full-with-inner",
       "group":"component"
+    },
+    {
+      "name":"box-organizations-tiles",
+      "group":"component"
+    },
+    {
+      "name":"box-media-grid",
+      "group":"component"
     }
   ],
   "prototype_nav":[
