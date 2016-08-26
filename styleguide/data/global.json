@@ -1,7 +1,6 @@
 {
   "site_title": "FFWvn Styleguide",
   "img_path": "images-demo/",
-  "project_path":"https://propeople-us.atlassian.net/browse/",
   "list_groups": [
     {
       "name":"basic",
@@ -66,6 +65,11 @@
     {
       "id":"ST-09",
       "name":"video",
+      "group":"component"
+    },
+    {
+      "id":"ST-09",
+      "name":"navigation-full",
       "group":"component"
     }
   ],
