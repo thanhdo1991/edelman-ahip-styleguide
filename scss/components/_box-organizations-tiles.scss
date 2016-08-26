@@ -1,0 +1,31 @@
+.box-organizations {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    @media screen and (min-width: 769px) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+  &__item {
+    width: 25%;
+    padding: 0 10px 20px;
+
+    @media screen and (min-width: 769px) {
+      width: 16.666%;
+      padding: 0 15px 60px;
+    }
+  }
+
+  &__img {
+    line-height: 0;
+
+    img {
+      border: 1px solid $gray-da;
+    }
+  }
+}

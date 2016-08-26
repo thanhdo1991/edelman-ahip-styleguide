@@ -1,0 +1,60 @@
+.sharethis-big__icon {
+  display: inline-block;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 460px) {
+    display: flex;
+  }
+
+  &__item {
+    margin: 10px;
+    border-radius: 7px;
+  }
+
+  &__link  {
+    display: flex;
+    color: white;
+
+    &:focus,
+    &:visited {
+      color: $white;
+    }
+
+    &__text {
+      @include faricynew-bold;
+      align-self: center;
+      background: rgba(255, 255, 255, 0.05);
+      padding-bottom: 20px;
+      padding-left: 29px;
+      padding-right: 60px;
+      padding-top: 20px;
+      line-height: 1;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      &.twitter-text {
+        background: rgba(0, 0, 0, 0.05);
+        width: 100%;
+      }
+    }
+
+    .iconfacebook {
+      align-self: flex-end;
+      line-height: 0;
+      padding-top: 13px;
+      padding-left: 25px;
+      margin-bottom: -5px;
+      height: 100%;
+      padding-right: 15px;
+    }
+
+    .fa-facebook{
+      font-size: 60px;
+    }
+
+    span.icontwitter {
+      font-size: 40px;
+      padding: 1px 15px;
+    }
+  }
+}

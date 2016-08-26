@@ -1,0 +1,14 @@
+ .box-media-grid {
+  &__list {
+   -moz-column-count: 2;
+   -webkit-column-count: 2;
+  }
+
+  &__item {
+    display: inline-block;
+    margin:  0;
+    padding:  0;
+    width:  100%;
+    background:  #efefef;
+  }
+ }
