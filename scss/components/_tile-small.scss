@@ -1,0 +1,61 @@
+$width-img: 262px;
+$heigh-img: 262px;
+
+.tile-small {
+  @extends %clearfix;
+  background-color: $green;
+  margin-bottom: 30px;
+  border-radius: 9px;
+  overflow: hidden;
+
+  &__image {
+    line-height: 0;
+    position: relative;
+    width: $width-img;
+    height: $heigh-img;
+
+    img {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: $heigh-img;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__title {
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  &--image {
+    @extend %clearfix;
+
+    .tile-small__content {
+      width: calc(100% - #{$width-img});
+      float: left;
+    }
+
+    .tile-small__image {
+      float: right;
+    }
+  }
+
+  &__link {
+    color: $white;
+
+    &:hover {
+      color: darken($white, 10%);
+    }
+  }
+}

@@ -50,10 +50,44 @@ $red: #8c211e;
 $pigeon-post: #aec9de;
 $pigeon-post-light: rgba($pigeon-post, .75);
 $green: #69ac3b;
+
+// Gray.
+$gray-4c: #4c4c4e;
+$gray-66: #666;
+$gray-33: #333;
+$gray-da: #dadada;
+$gray-e0: #e0e0e0;
+$gray-e8: #e8e8e8;
+
+// Black.
+$black: #000;
+
+// White.
+$white: #fff;
+
+// Blue.
+$blue: #58a6cf;
+$blue-dark: #0076b6;
+$blue-light: #99c5e3;
+
+// Green.
+$green: #5da73c;
+$green-light: #97cd78;
+
+// Yellow.
+$yellow: #fbad18;
+
+// Red.
+$red: #f00;
+
+// Need review.
+$blue-lighter: #5eaed3;
 $gray-e2: #e2e2e2;
-$link-color: $green;
-$link-hover: darken($link-color, 15%);
+$orange: #feae25;
 
 // Base colors
-$primary-color: $orange;
-$text-color: $gray;
+$primary-color: $green;
+$text-color: $gray-66;
+
+$link-color: $primary-color;
+$link-hover: darken($link-color, 15%);

@@ -33,7 +33,7 @@ $susy-tablet: (
   column-width: false,
   debug: (
     image: $show-image,
-    color: rgba($gray, .25),
+    color: rgba($black, .25),
     output: background,
     toggle: top right,
   ),
@@ -46,7 +46,7 @@ $susy-desktop: (
   container: rem($container-desktop),
   debug: (
     image: $show-image,
-    color: rgba($silver, .25),
+    color: rgba($black, .25),
     output: background,
     toggle: top right,
   ),

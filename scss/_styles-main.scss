@@ -23,7 +23,7 @@
 @import 'base/fonts';
 @import 'base/grid';
 @import 'base/typography';
-@import 'base/btn';
+@import 'base/button';
 @import 'base/form';
 
 // Helper classes
@@ -41,7 +41,8 @@
 
 // Component
 @import 'components/block-3-col';
-@import 'components/block-img-text';
+@import 'components/tile-small';
+@import 'components/tile-big';
 @import 'components/video';
 @import 'components/block-search';
 @import 'components/sharethis-big';

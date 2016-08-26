@@ -50,7 +50,7 @@ gulp.task('sass-dev', function () {
     .on('error', function (err) {
       console.error('Error!', err.message);
     })
-    .pipe(autoprefixer({browsers: ['last 2 versions']}))
+    .pipe(autoprefixer({browsers: ['last 3 versions']}))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(src.css))
     .pipe(filter("**/*.css"))
@@ -68,7 +68,7 @@ gulp.task('sass-prod', function () {
     .on('error', function (err) {
       console.error('Error!', err.message);
     })
-    .pipe(autoprefixer({browsers: ['last 2 versions']}))
+    .pipe(autoprefixer({browsers: ['last 3 versions']}))
     .pipe(gulp.dest(src.css))
     .pipe(filter("**/*.css"))
     .pipe(reload({
@@ -91,7 +91,6 @@ gulp.task('styleguide', function () {
   return gulp.src(src.html_pages)
     .pipe(data(function (file) {
       return requireUncached('../styleguide/data/global.json');
-      //return require('../data/' + path.basename(file.path, '.twig') + '.json');
     }))
     .pipe(twig())
     .pipe(prettify({indent_char: ' ', indent_size: 2}))
