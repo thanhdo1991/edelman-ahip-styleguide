@@ -10,9 +10,9 @@
 
 //Enable font-smoothing
 html {
-  @include faricynew-light;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  @include faricynew-light;
   color: $text-color;
   font-size: $base-font-size; // Don't modify static unit.
   font-smoothing: antialiased;
@@ -29,16 +29,15 @@ body {
   overflow-y: auto;
   position: relative;
   text-size-adjust: none;
-  transition: left 0.5s ease;
+  transition: left .5s ease;
   width: 100%;
 
   &:before {
-    transition: opacity 1s;
     opacity: 1;
+    transition: opacity 1s;
   }
 
   &.show-menu:before {
-    transition: opacity 1s;
     background-color: $gray-33;
     content: '';
     height: 100%;
@@ -46,6 +45,7 @@ body {
     opacity: .7;
     position: fixed;
     top: 0;
+    transition: opacity 1s;
     width: 100%;
     z-index: 1;
   }

@@ -1,6 +1,5 @@
 // Toggle Navigation
 .navbar-toggle {
-  display: none;
   background-color: transparent;
   border: 0;
   color: $blue-dark;
@@ -15,10 +14,6 @@
   top: rem(21px);
   width: rem(26px);
   z-index: 1;
-
-  // @include susy-media(tablet) {
-  //   right: rem(31px);
-  // }
 
   @include susy-media(desktop) {
     display: none !important;
@@ -85,6 +80,12 @@
     li.menu-item {
       position: relative;
 
+      &.active {
+        > a {
+          color: $link-color;
+        }
+      }
+
       a {
         color: $link-color;
         padding: rem(0 15px);
@@ -92,12 +93,6 @@
         &:hover {
           color: $link-hover;
           text-decoration: none;
-        }
-      }
-
-      &.active {
-        > a {
-          color: $link-color;
         }
       }
     }
@@ -125,12 +120,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  text-transform: uppercase;
 
   li {
     display: inline-block;
-    padding: 0 29px;
+    padding: rem(0 26px);
 
     a {
       color: $white;
@@ -140,6 +133,6 @@
 
 .navigation-full {
   background-color: $green;
+  padding: rem(28px 0 27px);
   text-align: center;
-  padding: 34px 0;
 }
