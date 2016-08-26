@@ -1,0 +1,27 @@
+$heigh-tile-big-img: 292px;
+
+.tile-big {
+  border-radius: 9px;
+  overflow: hidden;
+
+  &__image {
+    height: $heigh-tile-big-img;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .tile-small {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}

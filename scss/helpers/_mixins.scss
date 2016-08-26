@@ -34,8 +34,32 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-@mixin bebas-neue-bold {
-  font-family: "BebasNeue-Bold", Helvetica, Arial, sans-serif;
+@mixin faricynew-bold {
+  font-family: "faricynew-bold", Helvetica, Arial, sans-serif;
+}
+
+@mixin faricynew-light {
+  font-family: "faricynew-light", Helvetica, Arial, sans-serif;
+}
+
+@mixin faricynew-lightitalic {
+  font-family: "faricynew-lightitalic", Helvetica, Arial, sans-serif;
+}
+
+@mixin faricynew-medium {
+  font-family: "faricynew-medium", Helvetica, Arial, sans-serif;
+}
+
+@mixin nilland {
+  font-family: "nilland", Helvetica, Arial, sans-serif;
+}
+
+@mixin nilland-black {
+  font-family: "nilland-black", Helvetica, Arial, sans-serif;
+}
+
+@mixin nilland-extrabold {
+  font-family: "nilland-extrabold", Helvetica, Arial, sans-serif;
 }
 
 //Single image background with retina support

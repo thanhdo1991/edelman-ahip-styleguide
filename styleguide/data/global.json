@@ -55,7 +55,12 @@
     },
     {
       "id":"ST-09",
-      "name":"block-img-text",
+      "name":"tile-small",
+      "group":"component"
+    },
+    {
+      "id":"ST-09",
+      "name":"tile-big",
       "group":"component"
     },
     {
