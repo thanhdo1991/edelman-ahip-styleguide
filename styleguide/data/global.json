@@ -71,6 +71,22 @@
       "id":"ST-09",
       "name":"video",
       "group":"component"
+    },
+    {
+      "name":"search",
+      "group":"component"
+    },
+    {
+      "name":"sharethis-big-icon",
+      "group":"component"
+    },
+    {
+      "name":"block-image-full-width",
+      "group":"component"
+    },
+    {
+      "name":"block-image-full-with-inner",
+      "group":"component"
     }
   ],
   "prototype_nav":[
