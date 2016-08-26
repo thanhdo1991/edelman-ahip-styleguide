@@ -17,6 +17,11 @@
   ],
   "list_components":[
     {
+      "id":"ST-09",
+      "name":"navigation-full",
+      "group":"basic"
+    },
+    {
       "id":"ST-01",
       "name":"headings",
       "group":"basic",

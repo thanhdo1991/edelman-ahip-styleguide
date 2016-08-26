@@ -1,11 +1,17 @@
 {% block navigationfull %}
   <div class="navigation-full">
     <div class="container">
-      <ul id="secondary-menu" class="menu">
-        {% for nav in prototype_nav %}
-          <li class="menu-item"><a href="{{ nav.link }}">{{ nav.name }}</a></li>
-        {% endfor %}
-      </ul>
+      <div class="branding">
+        <div class="site-image">
+          <a href="/">
+            <img alt="AHIP" class="site-logo" src="logo.png">
+          </a>
+        </div>
+        <p class="site-title">
+          <a href="/" rel="home">AHIP</a>
+        </p>
+      </div>
+      {% include '../layouts/navigation.twig' %}
     </div>
   </div>
 {% endblock %}
