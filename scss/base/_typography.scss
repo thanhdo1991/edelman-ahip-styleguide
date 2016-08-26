@@ -51,9 +51,7 @@ p {
 }
 
 a {
-  @include faricynew-bold;
   color: $link-color;
-  font-size: rem(12px);
   outline: none;
   text-decoration: none;
   text-transform: uppercase;

@@ -95,6 +95,10 @@
     {
       "name":"box-media-grid",
       "group":"component"
+    },
+    {
+      "name":"box-media-grid-1",
+      "group":"component"
     }
   ],
   "prototype_nav":[
