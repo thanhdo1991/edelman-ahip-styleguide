@@ -48,18 +48,21 @@
   </header>
   <h1>Home</h1>
   <div class="block-video">
-    <div class="block-video__background"></div>
+    <div class="block-video__background">
+      <video class="block-video__video">
+        <source src="images-demo/media/video.mp4" type="video/mp4">
+          <source src="images-demo/media/video.ogv" type="video/ogg">
+            <source src="images-demo/media/video.webm" type="video/webm">
+              Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+      </video>
+    </div>
     <div class="block-video__content">
-      <div class="block-video__image">
-        <img src="images-demo/video_image.png" alt="AHIP image demo">
-      </div>
       <div class="block-video__text">
-        <h3 class="block-video__text__small">The story of moises brutus</h3>
-        <h2 class="block-video__text__big">an inspirational comeback</h2>
+        <h3 class="block-video__title">the story of moises brutus</h3>
+        <h2 class="block-video__subtitle">an inspirational comeback</h2>
       </div>
       <div class="block-video__player">
-        <div class="block-video__icon"><span class="fa fa-play"></span>
-        </div>
+        <span class="block-video__icon">Icon</span>
         <span class="block-video__play">Play video</span>
       </div>
     </div>
@@ -159,6 +162,7 @@
     </div>
   </footer>
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+  <script src="../js/lib/modernizr.min.js"></script>
   <script src="../js/lib/media.match.min.js"></script>
   <script src="../js/lib/enquire.min.js"></script>
   <script src="../js/script.js"></script>

@@ -150,7 +150,7 @@
     <h2 class="component--title">paragraphs</h2>
     <div class="component--demo">
       <div class="container">
-        <h4>P1 | Helvetica | 22px</h4>
+        <h4>P1 | Faricynew Light | 22px</h4>
         <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis
           quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque. Proin molestie nibh sapien, in varius lacus malesuada a. Proin sit amet velit nunc. Etiam luctus est libero, euismod bibendum turpis semper dignissim. Aenean hendrerit
           semper mattis. Sed rutrum tempus elementum. Cras bibendum malesuada tristique.</p>
@@ -162,7 +162,7 @@
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="container">
-  <h4>P1 | Helvetica | 22px</h4>
+  <h4>P1 | Faricynew Light | 22px</h4>
   <p>Nulla et lacus vitae dui faucibus posuere vel in est. Curabitur ut ullamcorper tortor. Vivamus sagittis nibh vitae enim varius, ac porttitor metus rutrum. Pellentesque pharetra lorem iaculis risus blandit, et lacinia magna iaculis? Sed mattis quam quam. Nunc congue felis id augue varius, non facilisis arcu scelerisque. Proin molestie nibh sapien, in varius lacus malesuada a. Proin sit amet velit nunc. Etiam luctus est libero, euismod bibendum turpis semper dignissim. Aenean hendrerit semper mattis. Sed rutrum tempus elementum. Cras bibendum malesuada tristique. </p>
 </div>
 </pre>
@@ -553,18 +553,21 @@
     <h2 class="component--title">video</h2>
     <div class="component--demo">
       <div class="block-video">
-        <div class="block-video__background"></div>
+        <div class="block-video__background">
+          <video class="block-video__video">
+            <source src="images-demo/media/video.mp4" type="video/mp4">
+              <source src="images-demo/media/video.ogv" type="video/ogg">
+                <source src="images-demo/media/video.webm" type="video/webm">
+                  Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+          </video>
+        </div>
         <div class="block-video__content">
-          <div class="block-video__image">
-            <img src="images-demo/video_image.png" alt="AHIP image demo">
-          </div>
           <div class="block-video__text">
-            <h3 class="block-video__text__small">The story of moises brutus</h3>
-            <h2 class="block-video__text__big">an inspirational comeback</h2>
+            <h3 class="block-video__title">the story of moises brutus</h3>
+            <h2 class="block-video__subtitle">an inspirational comeback</h2>
           </div>
           <div class="block-video__player">
-            <div class="block-video__icon"><span class="fa fa-play"></span>
-            </div>
+            <span class="block-video__icon">Icon</span>
             <span class="block-video__play">Play video</span>
           </div>
         </div>
@@ -576,17 +579,21 @@
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
           <pre class="brush: php"><div class="block-video">
-  <div class="block-video__background"></div>
+  <div class="block-video__background">
+    <video class="block-video__video">
+      <source src="images-demo/media/video.mp4" type="video/mp4">
+      <source src="images-demo/media/video.ogv" type="video/ogg">
+      <source src="images-demo/media/video.webm" type="video/webm">
+      Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+    </video>
+  </div>
   <div class="block-video__content">
-    <div class="block-video__image">
-      <img src="images-demo/video_image.png" alt="AHIP image demo">
-    </div>
     <div class="block-video__text">
-      <h3 class="block-video__text__small">The story of moises brutus</h3>
-      <h2 class="block-video__text__big">an inspirational comeback</h2>
+      <h3 class="block-video__title">the story of moises brutus</h3>
+      <h2 class="block-video__subtitle">an inspirational comeback</h2>
     </div>
     <div class="block-video__player">
-      <div class="block-video__icon"><span class="fa fa-play"></span></div>
+      <span class="block-video__icon">Icon</span>
       <span class="block-video__play">Play video</span>
     </div>
   </div>
@@ -1260,6 +1267,7 @@
     </div>
   </footer>
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+  <script src="../js/lib/modernizr.min.js"></script>
   <script src="../js/lib/media.match.min.js"></script>
   <script src="../js/lib/enquire.min.js"></script>
   <script src="../js/script.js"></script>

@@ -49,6 +49,8 @@
 
 .ahip-menu {
   @extend %clearfix;
+  @include faricynew-bold;
+  font-size: rem(12px);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -62,6 +64,7 @@
       color: $blue-dark;
       display: block;
       padding: rem(15px 0);
+      text-transform: uppercase;
 
       &:hover {
         color: darken($blue-dark, 15%);
