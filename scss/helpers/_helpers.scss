@@ -46,6 +46,13 @@
   &--teal {
     background-color: $teal;
   }
+
+  &-blue {
+     background-color: $blue1;
+  }
+  &-blue-light {
+    background-color: $blue2;
+  }
 }
 
 .visuallyhidden {
