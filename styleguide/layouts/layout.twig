@@ -9,11 +9,11 @@
       <link rel="stylesheet" href="../css/styles.css">
     {% endblock %}
   </head>
-  <body>
+  <body class="{{body_class}}">
     {% block header %}
       {% include 'header.twig' %}
-      <h1>{% block title %}{% endblock %}</h1>
     {% endblock %}
+    {% block title %}{% endblock %}
     {% block content %}{% endblock %}
     {% block footer %}
       {% include 'footer.twig' %}

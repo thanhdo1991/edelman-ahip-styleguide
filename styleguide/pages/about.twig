@@ -1,14 +1,13 @@
 {% set body_class = "home front" %}
 {% extends '../layouts/layout.twig' %}
 
-{{ga_tracking}}
-
-{% block header %}{% endblock %}
-{% block title %}{% endblock %}
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'About the Alliance'} only %}
+{% endblock %}
 
 {% block content %}
   {% include '../components/video.twig' %}
-  {% include '../layouts/header.twig' with {'navigation': 'navigation-full'} only %}
+  {% include '../components/navigation-full.twig' %}
   {% include '../components/block-3col-info.twig' %}
 {% endblock %}
 
