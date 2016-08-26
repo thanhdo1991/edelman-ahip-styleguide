@@ -3,10 +3,12 @@ $heigh-tile-big-img: 292px;
 .tile-big {
   border-radius: 9px;
 
+
   &__image {
     height: $heigh-tile-big-img;
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     img {
       border-radius: 9px 9px 0 0;
@@ -20,7 +22,7 @@ $heigh-tile-big-img: 292px;
   }
 
   .tile-small {
-    border-radius: 0;
+    border-radius: 0 0 9px 9px;
     margin-bottom: 0;
     position: relative;
   }

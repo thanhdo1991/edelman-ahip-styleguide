@@ -4,7 +4,7 @@ $heigh-img: 262px;
 .tile-small {
   @extends %clearfix;
   background-color: $green;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   border-radius: 9px;
 
 
@@ -32,6 +32,7 @@ $heigh-img: 262px;
     padding: 20px;
     position: relative;
     width: 100%;
+    border-radius: 0 0 9px 9px;
   }
 
   &__title {
