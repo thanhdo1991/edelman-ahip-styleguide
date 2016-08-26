@@ -47,7 +47,7 @@
   }
 }
 
-#primary-menu {
+.ahip-menu {
   @extend %clearfix;
   list-style: none;
   margin: 0;
@@ -116,23 +116,28 @@
 }
 
 // Second navigation
-#secondary-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+// #secondary-menu {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
 
-  li {
-    display: inline-block;
-    padding: rem(0 26px);
+//   li {
+//     display: inline-block;
+//     padding: rem(0 26px);
 
-    a {
-      color: $white;
-    }
-  }
-}
+//     a {
+//       color: $white;
+//     }
+//   }
+// }
 
 .navigation-full {
   background-color: $green;
   padding: rem(28px 0 27px);
   text-align: center;
+
+  .branding {
+    @include susy-media(tablet) {}
+    display: none;
+  }
 }
