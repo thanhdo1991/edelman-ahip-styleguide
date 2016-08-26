@@ -1,7 +1,6 @@
 {
   "site_title": "FFWvn Styleguide",
   "img_path": "images-demo/",
-  "project_path":"https://propeople-us.atlassian.net/browse/",
   "list_groups": [
     {
       "name":"basic",

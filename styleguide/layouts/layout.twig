@@ -6,7 +6,7 @@
     <title>{{ site_title }} - {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block head %}
-      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="../css/styles.css">
     {% endblock %}
   </head>
   <body>
@@ -19,10 +19,10 @@
       {% include 'footer.twig' %}
     {% endblock %}
     {% block footer_scripts %}
-      <script src="js/lib/media.match.min.js"></script>
-      <script src="js/lib/enquire.min.js"></script>
-      <script src="script/jquery.min.js"></script>
-      <script src="js/script.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+      <script src="../js/lib/media.match.min.js"></script>
+      <script src="../js/lib/enquire.min.js"></script>
+      <script src="../js/script.js"></script>
     {% endblock %}
   </body>
 </html>

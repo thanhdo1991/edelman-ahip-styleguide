@@ -2,26 +2,29 @@
 .navbar-toggle {
   background-color: transparent;
   border: 0;
-  color: $link-color;
+  color: $blue-dark;
   cursor: pointer;
   display: block;
-  height: 22px;
+  height: rem(22px);
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 30px;
+  right: rem(31px);
   text-align: center;
-  top: 35px;
-  width: 26px;
+  top: rem(21px);
+  width: rem(26px);
   z-index: 1;
-
-  @include susy-media(tablet) {
-    right: 31px;
-    top: 37px;
-  }
 
   @include susy-media(desktop) {
     display: none !important;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue-dark;
+    background-color: transparent;
+    outline: none;
   }
 
   span {
@@ -44,72 +47,68 @@
   }
 }
 
-// Main navigation
 #primary-menu {
   @extend %clearfix;
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: left;
 
   li.menu-item {
+    border-top: 1px solid $gray-da;
     list-style: none;
     position: relative;
 
-    &.current-menu-item,
-    &.current-menu-parent {
-      > a {
-        color: $link-hover !important;
-      }
-    }
-
     a {
-      color: $link-color;
+      color: $blue-dark;
       display: block;
-      font-size: rem(14px);
-      padding: 15px 0;
-      text-transform: uppercase;
+      padding: rem(15px 0);
 
       &:hover {
-        color: $link-hover;
+        color: darken($blue-dark, 15%);
         text-decoration: none;
       }
     }
   }
 
   > li.menu-item {
-      border: none !important;
-      float: left;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-
-      > a {
-        text-transform: uppercase;
-        padding: 35px 30px 36px;
-      }
+    &:first-of-type {
+      border-top: 0;
     }
+  }
 
   @include susy-media(desktop) {
     li.menu-item {
       position: relative;
 
-      a {
-        font-size: rem(13px);
-        margin-right: 0 !important;
-
-        &:hover {
-          background-color: $blue-light;
-          color: $white;
-          text-decoration: none;
+      &.active {
+        > a {
+          color: $link-color;
         }
       }
 
-      &.active {
-        > a {
-          background-color: $blue-light;
+      a {
+        color: $link-color;
+        padding: rem(0 15px);
+
+        &:hover {
+          color: $link-hover;
+          text-decoration: none;
+        }
+      }
+    }
+
+    > li.menu-item {
+      border: none !important;
+      float: left;
+
+      > a {
+        color: $text-color;
+        padding: rem(39px 30px 32px);
+        text-transform: uppercase;
+
+        &:hover {
           color: $white;
+          background-color: $blue-dark;
         }
       }
     }
@@ -121,12 +120,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  text-transform: uppercase;
 
   li {
     display: inline-block;
-    padding: 0 29px;
+    padding: rem(0 26px);
 
     a {
       color: $white;
@@ -136,6 +133,6 @@
 
 .navigation-full {
   background-color: $green;
+  padding: rem(28px 0 27px);
   text-align: center;
-  padding: 34px 0;
 }

@@ -1,0 +1,16 @@
+{% set body_class = "home front" %}
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  {% include '../components/video.twig' %}
+  {% include '../components/navigation-full.twig' %}
+  {% include '../components/block-3col-info.twig' %}
+{% endblock %}
+
+{% block footer_scripts %}
+  {{ parent() }}
+{% endblock %}
+
+{% block content_sidebar %}{% endblock %}

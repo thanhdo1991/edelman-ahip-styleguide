@@ -1,9 +1,18 @@
 header {
-  min-height: rem(90px);
+  min-height: rem(50px);
+
+  @include susy-media(desktop) {
+    min-height: rem(90px);
+  }
 }
 
 .header-container {
   @extend %clearfix;
+  padding: rem(12px 0);
+
+  @include susy-media(desktop) {
+    padding: 0;
+  }
 }
 
 .branding {
@@ -13,7 +22,7 @@ header {
   @include susy-media(desktop) {
     display: inline-block;
     margin: 0;
-    padding: 24px 0;
+    padding: 23px 0;
     vertical-align: middle;
     width: 25%;
   }
@@ -37,6 +46,8 @@ header {
 
 // Navigation && Serch form
 .branding-bottom {
+  transition: left 0.5s ease;
+  background-color: $white;
   bottom: 0;
   height: 100%;
   left: 100%;
@@ -56,9 +67,10 @@ header {
     float: right;
     left: 0 !important;
     overflow: visible;
+    padding: 0;
     position: static;
     text-align: right;
     vertical-align: middle;
-    padding: 0;
+    width: auto !important;
   }
 }
