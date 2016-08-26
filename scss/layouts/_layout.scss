@@ -22,6 +22,48 @@ html {
 body {
   // Disable in production mode;
   // @include show-breakpoints;
-  text-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
   font-size: 22px;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  text-size-adjust: none;
+  transition: left 0.5s ease;
+  width: 100%;
+
+  &:before {
+    transition: opacity 1s;
+    opacity: 1;
+  }
+
+  &.show-menu:before {
+    transition: opacity 1s;
+    background-color: $gray-33;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &.hide-menu {
+    left: 0 !important;
+  }
+
+  @include susy-media(desktop) {
+    left: 0 !important;
+
+    &:before {
+      background-color: transparent !important;
+      content: '';
+      height: 0 !important;
+      visibility: hidden;
+      width: 0 !important;
+      z-index: -1 !important;
+    }
+  }
 }
