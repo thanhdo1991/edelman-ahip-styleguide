@@ -1,10 +1,16 @@
 #footer {
-  background-color: $gray-e2;
-  font-size: rem(11px);
-  height: rem(129px);
-  line-height: rem(18px);
-  padding: 50px 0 46px;
+  @include faricynew-bold;
+  font-size: rem(12px);
+  padding: rem(25px 0);
   z-index: 9;
+  background-image: url($image-path + 'bg-footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include susy-media(tablet) {
+    padding: rem(47px 0 50px);
+    height: rem(129px);
+  }
 
   &.fix-bottom {
     position: fixed;
@@ -16,19 +22,24 @@
   }
 
   .site-info {
-    width: 75%;
-    display: inline-block;
+    margin-bottom: rem(10px);
     white-space: nowrap;
     text-transform: uppercase;
-    margin-right: -6px;
-    vertical-align: middle;
+
+    @include susy-media(tablet) {
+      width: 77%;
+      float: left;
+      margin-top: rem(8px);
+      margin-bottom: 0;
+    }
   }
 
   .footer-social {
-    text-align: right;
-    display: inline-block;
-    width: 25%;
-    vertical-align: middle;
+    @include susy-media(tablet) {
+      text-align: right;
+      float: left;
+      width: 23%;
+    }
 
     ul {
       list-style: none;
@@ -38,38 +49,58 @@
       li {
         list-style: none;
         display: inline-block;
-        padding-left: 16px;
+        margin-left: rem(7px);
       }
     }
 
     a {
+      background: $blue-darken;
+      border-radius: 50%;
       color: $white;
       display: block;
-      text-indent: -999em;
       font-size: 0;
-      background: red;
-      border-radius: 50%;
-      height: 32px;
-      width: 32px;
+      height: rem(32px);
+      line-height: rem(32px);
       text-align: center;
-      line-height: 32px;
+      text-indent: -999em;
+      width: rem(32px);
+
+      &.twitter {
+        background-color: $blue-lighter;
+      }
+
+      &.youtube {
+        background-color: $red;
+      }
 
       &:before {
         vertical-align: middle;
+        font-size: rem(20px);
       }
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
   }
 
+  .footer-container {
+    @extend %clearfix;
+  }
+
   .copyright {
-    @include span(6 of 12);
+    margin-bottom: rem(10px);
+
+    @include susy-media(tablet) {
+      @include span(6 of 12);
+      margin-bottom: 0;
+    }
   }
 
   .privacy {
-    @include span(6 of 12 last);
-    text-align: right;
+    @include susy-media(tablet) {
+      @include span(6 of 12 last);
+      text-align: right;
+    }
   }
 }
