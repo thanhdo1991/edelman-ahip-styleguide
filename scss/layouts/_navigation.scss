@@ -115,29 +115,49 @@
   }
 }
 
-// Second navigation
-// #secondary-menu {
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-
-//   li {
-//     display: inline-block;
-//     padding: rem(0 26px);
-
-//     a {
-//       color: $white;
-//     }
-//   }
-// }
-
 .navigation-full {
-  background-color: $green;
-  padding: rem(28px 0 27px);
-  text-align: center;
+  padding: rem(12px 0);
+  position: relative;
+
+  @include susy-media(desktop) {
+    background-color: $green;
+    padding: rem(27px 0);
+    text-align: center;
+  }
 
   .branding {
-    @include susy-media(tablet) {}
-    display: none;
+    text-align: left;
+
+    @include susy-media(desktop) {
+      display: none;
+    }
+  }
+
+  .branding-bottom {
+    @include susy-media(desktop) {
+      float: none;
+      text-align: center;
+      width: 100% !important;
+    }
+  }
+
+  .ahip-menu {
+    li.menu-item {
+      @include susy-media(desktop) {
+        display: inline-block;
+        float: none;
+        padding: rem(0 26px);
+
+        a {
+          color: $white;
+          padding: 0;
+
+          &:hover {
+            background-color: transparent;
+            color: darken($white, 10%);
+          }
+        }
+      }
+    }
   }
 }
