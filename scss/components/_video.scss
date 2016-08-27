@@ -1,3 +1,5 @@
+$block-video-selector: '.block-video';
+
 .block-video {
   height: rem(300px);
   position: relative;
@@ -52,7 +54,7 @@
     position: absolute;
     text-align: center;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     z-index: 3;
 
@@ -202,7 +204,7 @@
   }
 
   &.playing {
-    .block-video__icon {
+    #{$block-video-selector}__icon {
       @extend .icon-pause;
     }
   }

@@ -10,8 +10,9 @@ $heigh-tile-big-img: 292px;
     position: relative;
     overflow: hidden;
     line-height: 0;
+
     @media screen and (min-width: 769px) {
-    height: $heigh-tile-big-img;
+      height: $heigh-tile-big-img;
     }
 
     img {
