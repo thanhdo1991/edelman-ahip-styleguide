@@ -1,100 +1,51 @@
-.block-video_hero {
-  @include susy-media(tablet) {
-    margin-bottom: 20px;
-  }
-
-  .vidyard-video {
-    padding-bottom: 0;
-
-    .vidyard_player > span {
-      position: relative !important;
-      height: 18.75rem !important;
-      width: 100% !important;
-      -webkit-transform: translate(-50%,0px);
-      -ms-transform: translate(-50%,0px);
-      transform: translate(-50%,0px);
-      min-width: 64.3125rem;
-      left: 50%;
-
-      @include susy-media(tablet) {
-        min-height: 25rem;
-        min-width: 85.75rem;
-      }
-
-      @include susy-media(desktop) {
-        min-height: 35rem;
-        min-width: 120.0625rem;
-      }
-    }
-  }
-
-  .vidyard-banner {
-    position: relative;
-    overflow: hidden;
-
-    &:before {
-      background-color: rgba(0,0,0,0.2);
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 2;
-    }
-  }
-
-  .overlay-text {
-    color: $white;
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 90%;
-    z-index: 3;
-
-    @include susy-media(tablet) {
-      width: 70%;
-    }
-  }
-}
-
-.vidyard-video {
-  height: auto;
-  padding-bottom: 56.25%;
+.block-video {
+  height: rem(300px);
   position: relative;
+  overflow: hidden;
 
-  &:before {
-    background-color: rgba(0,0,0,0.7);
-    content: '';
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+  @include susy-media(tablet) {
+    height: rem(400px);
   }
 
-  .vidyard_player > span {
-    position: static !important;
-    height: auto !important;
-    width: auto !important;
-  }
-}
-
-.vidyard-banner {
   @include susy-media(desktop) {
     height: rem(560px);
-    padding-bottom: 0;
   }
-}
 
-////////////////////////////////////////////////////////////////////////////////
-.block-video {
-  height: rem(560px);
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.2);
+  @include susy-media(desktopWide) {
+    height: rem(810px);
+  }
+
+  &__background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+
+    &:before {
+      background-color: rgba($gray-4c, .25);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    &:after {
+      background-image: url($image-path + 'bg-video-opacity.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
 
   &__content {
     left: 50%;
@@ -104,20 +55,77 @@
     transform: translate(-50%,-50%);
     width: 90%;
     z-index: 3;
+
+    @include susy-media(desktop) {
+      width: 70%;
+    }
+
+    @include susy-media(desktop) {
+      margin-top: rem(91px)
+    }
   }
 
   &__text {
     text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: rem(25px);
 
-    &__small {
-      font-size: 13px;
-      margin: 0 0 20px;
+    @include susy-media(desktop) {
+      margin-bottom: rem(35px);
     }
 
-    &__big {
-      font-size: 70px;
-      color: $blue;
-      margin: 0 0 20px;
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(64px);
+    }
+
+    &:before {
+      background-color: $yellow;
+      bottom: 0;
+      content: '';
+      height: rem(5px);
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: rem(30px);
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    @include faricynew-bold;
+    color: $gray-4c;
+    font-size: rem(14px);
+    margin: rem(0 0 10px);
+
+    @include susy-media(tablet) {
+      font-size: rem(16px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(35px);
+    }
+  }
+
+  &__subtitle {
+    color: $blue;
+    font-size: rem(20px);
+    margin: 0 0 20px;
+
+    @include susy-media(tablet) {
+      font-size: rem(36px);
+    }
+
+    @include susy-media(desktop) {
+      font-size: rem(72px);
+      line-height: 1;
+    }
+
+    @include susy-media(desktopWide) {
+      font-size: rem(128px);
+      line-height: rem(112px);
+      margin: 0 0 38px;
     }
   }
 
@@ -126,26 +134,80 @@
   }
 
   &__icon {
-    span {
-      border: 7px solid $blue;
-      position: relative;
-      width: 68px;
-      border-radius: 50%;
-      height: 68px;
-      font-size: 28px;
-      text-align: center;
-      color: $blue;
+    @extend .icon-play2;
+    color: $blue-dark;
+    font-size: rem(48px);
+    height: 1em;
+    position: relative;
+    text-align: center;
+    width: 1em;
+    display: block;
+    text-indent: -999em;
+    margin: 0 auto;
+    margin-bottom: rem(10px);
 
-      &:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    @include susy-media(tablet) {
+      font-size: rem(56px);
+    }
 
-      &:hover {
-        cursor: pointer;
-      }
+    @include susy-media(desktop) {
+      font-size: rem(68px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(14px);
+    }
+
+    &:before {
+      @extend %icons;
+      text-indent: 0;
+      float: left;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__video {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: rem($tablet);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    min-height: rem(300px);
+
+    @include susy-media(tablet) {
+      min-height: rem(400px);
+      min-width: rem($desktop);
+    }
+
+    @include susy-media(desktop) {
+      min-width: rem($desktop-xxwide);
+      min-height: rem(560px);
+    }
+  }
+
+  &__play {
+    @include faricynew-bold;
+    color: $gray-4c;
+    display: block;
+    font-size: rem(12px);
+    text-transform: uppercase;
+  }
+
+  &__player {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &.playing {
+    .block-video__icon {
+      @extend .icon-pause;
     }
   }
 }
