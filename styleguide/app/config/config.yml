@@ -1,5 +1,0 @@
-# app/config/config.yml
-twig:
-    # ...
-    globals:
-        ga_tracking: UA-xxxxx-x

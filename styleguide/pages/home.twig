@@ -4,16 +4,10 @@
 {{ga_tracking}}
 
 {% block header %}{% endblock %}
-{% block title %}{% endblock %}
 
 {% block content %}
   {% include '../components/video.twig' %}
-  {% include '../layouts/header.twig' with {'navigation': 'navigation-full'} only %}
+  {% include '../layouts/header.twig' with {'navigation': 'navigation-full'} %}
   {% include '../components/block-3col-info.twig' %}
+  {% include '../components/block-image-full-width.twig' %}
 {% endblock %}
-
-{% block footer_scripts %}
-  {{ parent() }}
-{% endblock %}
-
-{% block content_sidebar %}{% endblock %}
