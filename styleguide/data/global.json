@@ -99,6 +99,10 @@
     {
       "name":"box-media-grid-1",
       "group":"component"
+    },
+    {
+      "name":"block-image-full-width-has-button",
+      "group":"component"
     }
   ],
   "prototype_nav":[

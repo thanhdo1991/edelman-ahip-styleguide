@@ -5,11 +5,14 @@ $heigh-tile-big-img: 292px;
 
 
   &__image {
-    height: $heigh-tile-big-img;
+    height: 200px;
     width: 100%;
     position: relative;
     overflow: hidden;
     line-height: 0;
+    @media screen and (min-width: 769px) {
+    height: $heigh-tile-big-img;
+    }
 
     img {
       border-radius: 9px 9px 0 0;

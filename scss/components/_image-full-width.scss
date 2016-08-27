@@ -17,10 +17,17 @@
     padding: 20px;
     position: relative;
     z-index: 1;
+
     @media screen and (min-width: 769px) {
       margin: -212px auto 0;
       padding: 65px 80px;
       max-width: 650px;
+    }
+
+    .block-content-image__body {
+      @include faricynew-light;
+      font-size: 22px;
+      margin-bottom: 35px;
     }
   }
 
@@ -66,6 +73,20 @@
       a {
         color: $white;
       }
+    }
+  }
+
+  &--has-botton {
+    .block-image-full-width__content  {
+      @media screen and (min-width: 769px) {
+        margin: -212px auto 0;
+        padding: 65px 80px;
+        max-width: 720px;
+      }
+    }
+
+    .button {
+      width: 100%;
     }
   }
 }
