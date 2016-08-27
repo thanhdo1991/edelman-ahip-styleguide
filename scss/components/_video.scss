@@ -60,7 +60,7 @@
       width: 70%;
     }
 
-    @include susy-media(desktop) {
+    @include susy-media(desktopWide) {
       margin-top: rem(91px)
     }
   }
@@ -111,7 +111,7 @@
   &__subtitle {
     color: $blue;
     font-size: rem(20px);
-    margin: 0 0 20px;
+    margin: rem(0 0 20px);
 
     @include susy-media(tablet) {
       font-size: rem(36px);
@@ -125,12 +125,8 @@
     @include susy-media(desktopWide) {
       font-size: rem(128px);
       line-height: rem(112px);
-      margin: 0 0 38px;
+      margin: rem(0 0 38px);
     }
-  }
-
-  &__image {
-    margin-bottom: 20px;
   }
 
   &__icon {
