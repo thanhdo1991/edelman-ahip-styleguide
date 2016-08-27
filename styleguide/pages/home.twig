@@ -1,16 +1,13 @@
 {% set body_class = "home front" %}
 {% extends '../layouts/layout.twig' %}
 
-{% block title %}Home{% endblock %}
+{{ga_tracking}}
+
+{% block header %}{% endblock %}
 
 {% block content %}
   {% include '../components/video.twig' %}
-  {% include '../components/navigation-full.twig' %}
+  {% include '../layouts/header.twig' with {'navigation': 'navigation-full'} %}
   {% include '../components/block-3col-info.twig' %}
+  {% include '../components/block-image-full-width.twig' %}
 {% endblock %}
-
-{% block footer_scripts %}
-  {{ parent() }}
-{% endblock %}
-
-{% block content_sidebar %}{% endblock %}

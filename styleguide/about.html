@@ -4,33 +4,15 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="favicon.ico">
-  <title>FFWvn Styleguide -</title>
+  <title>FFWvn Styleguide -
+    <h1>About the Alliance</h1>
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="home front">
-  <div class="block-video">
-    <div class="block-video__background">
-      <video class="block-video__video">
-        <source src="images-demo/media/video.mp4" type="video/mp4">
-          <source src="images-demo/media/video.ogv" type="video/ogg">
-            <source src="images-demo/media/video.webm" type="video/webm">
-              Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
-      </video>
-    </div>
-    <div class="block-video__content">
-      <div class="block-video__text">
-        <h3 class="block-video__title">the story of moises brutus</h3>
-        <h2 class="block-video__subtitle">an inspirational comeback</h2>
-      </div>
-      <div class="block-video__player">
-        <span class="block-video__icon">Icon</span>
-        <span class="block-video__play">Play video</span>
-      </div>
-    </div>
-  </div>
-  <header class="header navigation-full">
+  <header class="header ">
     <div class="header-container container">
       <div class="branding">
         <div class="site-image">
@@ -66,6 +48,59 @@
       </div>
     </div>
   </header>
+  <h1>About the Alliance</h1>
+  <div class="block-video">
+    <div class="block-video__background"></div>
+    <div class="block-video__content">
+      <div class="block-video__image">
+        <img src="images-demo/video_image.png" alt="AHIP image demo">
+      </div>
+      <div class="block-video__text">
+        <h3 class="block-video__text__small">The story of moises brutus</h3>
+        <h2 class="block-video__text__big">an inspirational comeback</h2>
+      </div>
+      <div class="block-video__player">
+        <div class="block-video__icon"><span class="fa fa-play"></span>
+        </div>
+        <span class="block-video__play">Play video</span>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-full">
+    <div class="container">
+      <div class="branding">
+        <div class="site-image">
+          <a href="/">
+            <img alt="AHIP" class="site-logo" src="logo.png">
+          </a>
+        </div>
+        <p class="site-title">
+          <a href="/" rel="home">AHIP</a>
+        </p>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="fa fa-bars">Toggle navigation</span>
+      </button>
+      <div class="branding-bottom clearfix">
+        <nav class="main-navigation" role="navigation">
+          <div class="menu-main-navigation-container">
+            <ul class="ahip-menu menu">
+              <li class="menu-item"><a href="whymedicaid.html">Why medicaid?</a>
+              </li>
+              <li class="menu-item"><a href="stories.html">stories?</a>
+              </li>
+              <li class="menu-item"><a href="getinvolved.html">get involved</a>
+              </li>
+              <li class="menu-item"><a href="news.html">resource & news</a>
+              </li>
+              <li class="menu-item"><a href="about.html">about the alliance</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="block-3col-info">
     <div class="block-3col-info__image">
       <img src="images-demo/family_jump.jpg" alt="AHIP image demo">
@@ -100,18 +135,6 @@
       </div>
     </div>
   </div>
-  <div class="block-image-full-width">
-    <div class="block-image-full-width__image">
-      <img src="images-demo/image-demo1.png" alt="">
-    </div>
-    <div class="block-image-full-width__content block-content-image">
-      <h2 class="block-title"><a href="">SHARE YOUR STORY</a></h2>
-      <div class="block-content-image__body">
-        <p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-    </div>
-  </div>
   <footer id="footer" class="footer bg--alto">
     <div class="footer-container container">
       <div class="site-info">
@@ -138,10 +161,10 @@
     </div>
   </footer>
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-  <script src="../js/lib/modernizr.min.js"></script>
   <script src="../js/lib/media.match.min.js"></script>
   <script src="../js/lib/enquire.min.js"></script>
   <script src="../js/script.js"></script>
+
 </body>
 
 </html>
