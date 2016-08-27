@@ -17,58 +17,47 @@
   ],
   "list_components":[
     {
-      "id":"ST-09",
       "name":"navigation-full",
       "group":"basic"
     },
     {
-      "id":"ST-01",
       "name":"headings",
       "group":"basic",
       "hidecode":true
     },
     {
-      "id":"ST-02",
       "name":"paragraphs",
       "group":"basic"
     },
     {
-      "id":"ST-03",
       "name":"links",
       "group":"basic"
     },
     {
-      "id":"ST-04",
       "name":"form",
       "group":"basic"
     },
     {
-      "id":"ST-08",
       "name":"background",
       "group":"helper"
     },
     {
-      "id":"ST-09",
       "name":"button",
       "group":"helper"
     },
     {
-      "id":"ST-09",
       "name":"block-3col-info",
       "group":"component"
     },
     {
-      "id":"ST-09",
       "name":"tile-small",
       "group":"component"
     },
     {
-      "id":"ST-09",
       "name":"tile-big",
       "group":"component"
     },
     {
-      "id":"ST-09",
       "name":"video",
       "group":"component"
     },
