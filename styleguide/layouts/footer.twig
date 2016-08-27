@@ -1,4 +1,14 @@
 {% block footer %}
+{% if has_social is not empty %}
+<div class="box-social">
+  <div class="container">
+    <div class="box-social--body">
+      {% include '../components/subcriber.twig' with {'text': 'email address', 'btn_text': 'submit'} %}
+      {% include '../components/sharethis-big-icon.twig' %}
+    </div>
+  </div>
+</div>
+{% endif %}
 <footer id="footer" class="footer bg--alto">
   <div class="footer-container container">
     <div class="site-info">
