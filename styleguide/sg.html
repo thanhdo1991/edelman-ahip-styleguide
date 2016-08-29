@@ -35,7 +35,7 @@
       </div>
 
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="fa fa-bars">Toggle navigation</span>
+        <span class="icon-menu">Toggle navigation</span>
       </button>
       <div class="branding-bottom clearfix">
         <nav class="main-navigation" role="navigation">
@@ -80,7 +80,7 @@
             </p>
           </div>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="fa fa-bars">Toggle navigation</span>
+            <span class="icon-menu">Toggle navigation</span>
           </button>
           <div class="branding-bottom clearfix">
             <nav class="main-navigation" role="navigation">
@@ -121,7 +121,7 @@
         </p>
       </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-    <span class="fa fa-bars">Toggle navigation</span>
+    <span class="icon-menu">Toggle navigation</span>
   </button>
   <div class="branding-bottom clearfix">
     <nav class="main-navigation" role="navigation">
@@ -1622,6 +1622,39 @@
     </div>
   </div>
 
+  <div class="component--item" id="stories-filter">
+    <h2 class="component--title">stories filter</h2>
+    <div class="component--demo">
+      <div class="container">
+        <div class="stories-select">
+          <select data-placeholder="View all stories">
+            <option value="all">View all stories</option>
+            <option value="stories-1">Stories 1</option>
+            <option value="stories-2">Stories 2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><div class="container">
+  <div class="stories-select">
+    <select data-placeholder="View all stories">
+      <option value="all">View all stories</option>
+      <option value="stories-1">Stories 1</option>
+      <option value="stories-2">Stories 2</option>
+    </select>
+  </div>
+</div>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="component--item" id="form-involved">
     <h2 class="component--title">form involved</h2>
     <div class="component--demo">
@@ -1765,6 +1798,7 @@
   <script src="../js/lib/modernizr.min.js"></script>
   <script src="../js/lib/media.match.min.js"></script>
   <script src="../js/lib/enquire.min.js"></script>
+  <script src="../js/lib/chosen.jquery.min.js"></script>
   <script src="../js/script.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.js"></script>

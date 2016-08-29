@@ -11,9 +11,10 @@
   position: absolute;
   right: rem(31px);
   text-align: center;
-  top: rem(21px);
+  top: 50%;
   width: rem(26px);
   z-index: 1;
+  transform: translate(0, -50%);
 
   @include susy-media(desktop) {
     display: none !important;

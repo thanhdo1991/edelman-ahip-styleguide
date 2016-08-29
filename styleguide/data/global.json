@@ -114,6 +114,10 @@
       "group":"component"
     },
     {
+      "name":"stories-filter",
+      "group":"component"
+    },
+    {
       "name":"form-involved",
       "group":"component"
     }

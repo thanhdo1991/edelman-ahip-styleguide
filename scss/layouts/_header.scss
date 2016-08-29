@@ -1,5 +1,6 @@
 header {
   min-height: rem(50px);
+  position: relative;
 
   @include susy-media(desktop) {
     min-height: rem(90px);
@@ -33,6 +34,12 @@ header {
 }
 
 .site-image {
+  text-align: center;
+
+  @include susy-media(desktop) {
+    text-align: left;
+  }
+
   a {
     display: block;
     line-height: 0;
