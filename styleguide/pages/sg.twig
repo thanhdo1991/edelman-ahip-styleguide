@@ -39,6 +39,10 @@
   {% endfor %}
 {% endblock %}
 
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'Stories'} only %}
+{% endblock %}
+
 {% block footer_scripts %}
   {{ parent() }}
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.js"></script>
