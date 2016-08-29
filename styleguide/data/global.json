@@ -90,6 +90,22 @@
       "group":"component"
     },
     {
+      "name":"box-media-grid-2",
+      "group":"component"
+    },
+    {
+      "name":"box-media-grid-3",
+      "group":"component"
+    },
+    {
+      "name":"box-media-grid-4",
+      "group":"component"
+    },
+    {
+      "name":"box-contact-us",
+      "group":"component"
+    },
+    {
       "name":"block-image-full-width-has-button",
       "group":"component"
     }
