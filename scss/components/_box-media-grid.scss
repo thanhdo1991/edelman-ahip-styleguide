@@ -15,6 +15,12 @@
     padding: 0 4px;
     width:  100%;
   }
+
+  &--3 {
+    .box-grid-content.big-img{
+      overflow: initial;
+    }
+  }
  }
  .box-grid-content__img.big-img {
     img {
@@ -26,7 +32,6 @@
  }
 /* box-grid-content */
 .box-grid-content {
-  background-color: $white;
   border-radius: 9px;
   min-height: 260px;
   position: relative;
