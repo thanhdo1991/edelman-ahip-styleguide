@@ -1,5 +1,14 @@
 .stories-select {
   text-align: center;
+  margin-bottom: rem(30px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(45px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(60px);
+  }
 }
 
 .chosen-container {

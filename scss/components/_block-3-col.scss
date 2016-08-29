@@ -79,8 +79,8 @@
   }
 
   &__text {
-    color: $white;
     @include pad(10%);
+    color: $white;
 
     @include susy-media(desktop) {
       @include pad(15%);
@@ -101,8 +101,8 @@
 
       @include susy-media(desktopWide) {
         font-size: rem(96px);
+        line-height: .9;
         margin-bottom: rem(6px);
-        line-height: 0.9;
       }
     }
 

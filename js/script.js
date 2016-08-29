@@ -100,6 +100,32 @@
     }
   });
 
+  // Video stories.
+  var ahip_stories_video = '.block-video-stories__video',
+      ahip_stories_playback = '.block-video-stories__icon',
+      videoPlay = 'playing',
+      blockStoriesVideo = $('.block-video-stories');
+
+  // Listen for playback.
+  blockStoriesVideo.each(function () {
+    var isThis = $(this);
+    isThis.find(ahip_stories_playback).click(function(e) {
+      e.preventDefault();
+      if (isThis.find(ahip_stories_video)[0].paused) {
+        isThis.addClass(videoPlay);
+        isThis.find(ahip_stories_video)[0].play();
+      }
+      else {
+        isThis.removeClass(videoPlay);
+        isThis.find(ahip_stories_video)[0].pause();
+      }
+    });
+
+    isThis.find(ahip_stories_video)[0].onended = function () {
+      isThis.removeClass(videoPlay);
+    }
+  });
+
   $('.stories-select select').chosen({
     'disable_search': true
   });

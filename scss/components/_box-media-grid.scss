@@ -136,3 +136,20 @@
   }
 }
 
+.box-media--link {
+  margin: 0 auto rem(30px);
+  max-width: rem(555px);
+  width: 100%;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(40px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(80px);
+  }
+
+  .button {
+    width: 100%;
+  }
+}
