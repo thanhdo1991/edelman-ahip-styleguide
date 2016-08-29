@@ -1,0 +1,12 @@
+.region-content-box-media {
+  background-image: url('../images/bg-media-region.png');
+
+
+}
+
+.box-media--title {
+  font-size: 42px;
+  @include nilland-extrabold;
+  text-align: center;
+  color: $blue3;
+}
