@@ -1,63 +1,119 @@
 $width-img: 262px;
 $heigh-img: 262px;
+$heigh-tile-big-img: 292px;
+$heigh-img-mobile: 200px;
 
-.tile-small {
-  @extends %clearfix;
-  background-color: $green;
-  margin-bottom: 0;
-  border-radius: 9px;
-
-
-  &__image {
-    line-height: 0;
-    position: relative;
-    width: $width-img;
-    height: $heigh-img;
-
-    img {
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      border-radius: 0 9px 9px 0;
-    }
-  }
-
+.tile {
   &__content {
-    display: flex;
-    flex-direction: column;
-    height: $heigh-img;
-    justify-content: space-between;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-    border-radius: 0 0 9px 9px;
+    @extend %flex-column-center;
+    background-color: $green;
+    height: rem($heigh-img-mobile);
+    padding: rem(20px);
+    border-radius: rem(9px);
+
+    @include susy-media(tablet) {
+      padding: rem(32px 37px 34px);
+      height: $heigh-img;
+    }
   }
 
   &__title {
+    @include faricynew-bold;
     color: $white;
+    font-size: rem(28px);
     text-transform: capitalize;
   }
 
-  &--image {
-    @extend %clearfix;
-
-    .tile-small__content {
-      width: calc(100% - #{$width-img});
-      float: left;
-    }
-
-    .tile-small__image {
-      float: right;
-    }
-  }
-
   &__link {
-    color: $white;
+    @include faricynew-bold;
+    font-size: rem(12px);
+    text-transform: uppercase;
+
+    &,
+    &:active,
+    &:visited {
+      color: $white;
+    }
 
     &:hover {
       color: darken($white, 10%);
+    }
+  }
+
+  &-small {
+    @extends %clearfix;
+    margin-bottom: 20px;
+
+    &__image {
+      line-height: 0;
+      position: relative;
+      width: $width-img;
+      height: $heigh-img;
+      margin: 0 auto;
+
+      @include susy-media(tablet) {
+        float: right;
+        margin: 0;
+      }
+
+      img {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: rem(0 0 9px 9px);
+
+        @include susy-media(tablet) {
+          border-radius: rem(0 9px 9px 0);
+        }
+      }
+    }
+
+    &--image {
+      @extend %clearfix;
+
+      .tile__content {
+        @include susy-media(tablet) {
+          border-radius: rem(9px 0 0 9px);
+          float: left;
+          width: calc(100% - #{$width-img});
+        }
+      }
+    }
+  }
+
+  &-big {
+    &__image {
+      height: rem($heigh-img-mobile);
+      position: relative;
+      overflow: hidden;
+      line-height: 0;
+
+      @include susy-media(tablet) {
+        height: $heigh-tile-big-img;
+      }
+
+      img {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: rem(9px 9px 0 0);
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .tile__title {
+      @include susy-media(tablet) {
+        font-size: rem(36px);
+      }
+    }
+
+    .tile__content {
+      border-radius: rem(0 0 9px 9px);
     }
   }
 }
