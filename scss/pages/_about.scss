@@ -1,0 +1,37 @@
+.about {
+  .header  {
+    background-image: url('../images/bg-header.jpg')
+  }
+  .main-content {
+    position: relative;
+    padding-top: 70px;
+    background-image: url('../images/bgabout.png');
+    margin-bottom: 30px;
+
+    .main-content-left {
+      float: left;
+      width: 60%;
+    }
+
+    .main-content-right {
+      width: 40%;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      padding-left: 50px;
+    }
+  }
+
+  .about-content {
+    font-size: 22px;
+    @include faricynew-light;
+
+    h2 {
+      font-size: 42px;
+      @include nilland-extrabold;
+      color: $blue3;
+      margin-top: 45px;
+      margin-bottom: 15px;
+    }
+  }
+}

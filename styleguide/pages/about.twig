@@ -1,4 +1,4 @@
-{% set body_class = "home front" %}
+{% set body_class = "about" %}
 {% extends '../layouts/layout.twig' %}
 
 {% block title %}
@@ -6,7 +6,26 @@
 {% endblock %}
 
 {% block content %}
-  {% include '../components/video.twig' %}
-  {% include '../components/navigation-full.twig' %}
-  {% include '../components/block-3col-info.twig' %}
+  <div class="main-content">
+    <div class="container">
+      <div class="main-content-left">
+        <div class="about-content">
+          <p>Mauris enim diam, consectetur vel felis in, imperdiet efficitur ipsum. Donec porta risus at sagittis volutpat. Quisque vitae leo ut eros pharetra tincidunt et lacinia augue.</p><p>Chasellus sit amet felis ut tortor scelerisque tincidunt vitae non purus. Donec tempor sem non nunc volutpat, sed vehicula odio dapibus. Vestibulum vulputate, neque et dictum cursus, felis nisl volutpat augue, vitae faucibus risus ante quis felis.</p><p>
+Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Et harumd und, dereud facilis est er expedit distinct.Nam liber te conscient to factor tum poen legum odioque civiuda. Et tam neque pecun modut est neque nonor et imper ned libidig met</p>
+
+        <h2>member organizations</h2>
+        <p>Chasellus sit amet felis ut tortor scelerisque tincidunt vitae non purus. Donec tempor sem non nunc volutpat, sed vehicula odio dapibus. Vestibulum vulputate, neque et dictum cursus, felis nisl volutpat augue, vitae faucibus risus ante quis felis.</p>
+        </div>
+      </div>
+      <div class="main-content-right">
+        {% include '../components/box-contact-us.twig' %}
+      </div>
+    </div>
+  </div>
+  {% include '../components/box-organizations-tiles.twig' %}
+{% endblock %}
+
+
+{% block footer %}
+  {% include '../layouts/footer.twig' with {'has_social': ''} %}
 {% endblock %}
