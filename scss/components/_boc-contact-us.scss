@@ -1,0 +1,19 @@
+.boc-contact-us {
+  &__title {
+    @include faricynew-bold;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__top {
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+  &__name {
+    @include faricynew-medium;
+    line-height: 1;
+  }
+  &__number {
+    @include faricynew-lightitalic;
+  }
+}

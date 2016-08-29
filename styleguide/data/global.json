@@ -106,11 +106,19 @@
       "group":"component"
     },
     {
+      "name":"box-sharethis-detail",
+      "group":"component"
+    },
+    {
       "name":"block-image-full-width-has-button",
       "group":"component"
     },
     {
       "name":"stories-filter",
+      "group":"component"
+    },
+    {
+      "name":"form-involved",
       "group":"component"
     }
   ],

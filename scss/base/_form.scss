@@ -15,8 +15,12 @@ input[type='submit'] {
   color: $text-color;
   font-size: rem(24px);
   margin-bottom: rem(35px);
-  padding: rem(20px 29px 21px);
   width: 100%;
+  padding: rem(15px 22px);
+
+  @include susy-media(desktop) {
+    padding: rem(20px 29px 21px);
+  }
 
   &::-ms-clear {
     display: none;
@@ -24,7 +28,11 @@ input[type='submit'] {
 }
 
 .form-text {
-  height: rem(71px);
+  height: rem(51px);
+
+  @include susy-media(desktop) {
+   height: rem(71px);
+  }
 
   &.error {
     border-color: $red;
@@ -34,5 +42,54 @@ input[type='submit'] {
   &.success {
     border-color: $gray-4c;
     color: $text-color;
+  }
+}
+
+.form {
+  &-wrapper {
+    @include susy-media(tablet) {
+      column-count: 2;
+      column-gap: rem(31px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(20px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(41px);
+    }
+  }
+
+  &--involved {
+    margin-bottom: rem(20px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(40px);
+    }
+
+    @include susy-media(desktop) {
+      margin-bottom: rem(60px);
+    }
+
+    @include susy-media(desktopWide) {
+      margin-bottom: rem(80px);
+    }
+
+    .form-textarea {
+      @include susy-media(desktop) {
+        min-height: rem(431px);
+      }
+    }
+
+    .form-submit {
+      margin: 0 auto;
+      display: block;
+
+      @include susy-media(desktop) {
+        width: 100%;
+        max-width: rem(555px);
+      }
+    }
   }
 }
