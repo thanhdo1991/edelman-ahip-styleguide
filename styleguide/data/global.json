@@ -102,6 +102,10 @@
       "group":"component"
     },
     {
+      "name":"box-contact-us",
+      "group":"component"
+    },
+    {
       "name":"block-image-full-width-has-button",
       "group":"component"
     }
