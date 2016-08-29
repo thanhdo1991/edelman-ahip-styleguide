@@ -94,12 +94,14 @@
       }
     });
 
-    // isThis.find(ahip_video)[0].bind('ended', endedVideo(isThis));
     isThis.find(ahip_video)[0].onended = function () {
       isThis.find(ahip_play).html("Play video");
       isThis.removeClass(videoPlay);
     }
   });
 
+  $('.stories-select select').chosen({
+    'disable_search': true
+  });
 
 }(this, this.document, this.jQuery));

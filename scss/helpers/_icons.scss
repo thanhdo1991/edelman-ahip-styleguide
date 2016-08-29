@@ -20,6 +20,12 @@
   }
 }
 
+.icon-angle-up:before {
+  content: "\eaec";
+}
+.icon-angle-down:before {
+  content: "\eaeb";
+}
 .icon-home:before {
   content: "\e900";
 }
@@ -1493,4 +1499,3 @@
 .icon-IcoMoon:before {
   content: "\eaea";
 }
-

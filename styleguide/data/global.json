@@ -108,6 +108,10 @@
     {
       "name":"block-image-full-width-has-button",
       "group":"component"
+    },
+    {
+      "name":"stories-filter",
+      "group":"component"
     }
   ],
   "prototype_nav":[
