@@ -1,9 +1,4 @@
 .about {
-  .header  {
-    background-image: url('../images/bg-header.jpg');
-    background-size: cover;
-  }
-
   .main-content {
     position: relative;
     padding-top: 30px;
@@ -61,4 +56,9 @@
     margin-top: 45px;
     margin-bottom: 15px;
   }
+}
+
+.header  {
+  background-image: url('../images/bg-header.jpg');
+  background-size: cover;
 }
