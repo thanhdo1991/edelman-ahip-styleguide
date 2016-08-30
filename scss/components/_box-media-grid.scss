@@ -2,7 +2,7 @@
   &__list {
     -moz-column-count: 1;
     -webkit-column-count: 1;
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1025px) {
       -moz-column-count: 2;
       -webkit-column-count: 2;
       margin-left: -4px;
@@ -136,3 +136,20 @@
   }
 }
 
+.box-media--link {
+  margin: 0 auto rem(30px);
+  max-width: rem(555px);
+  width: 100%;
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(40px);
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(80px);
+  }
+
+  .button {
+    width: 100%;
+  }
+}

@@ -120,6 +120,10 @@
     {
       "name":"form-involved",
       "group":"component"
+    },
+    {
+      "name":"video-stories",
+      "group":"component"
     }
   ],
   "prototype_nav":[

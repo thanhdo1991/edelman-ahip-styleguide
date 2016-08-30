@@ -1,7 +1,8 @@
 .region-content-box-media {
   background-image: url('../images/bg-media-region.png');
-
-
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
 }
 
 .box-media--title {
@@ -9,4 +10,46 @@
   @include nilland-extrabold;
   text-align: center;
   color: $blue3;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.box-media--link {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.box-social {
+  background-image: url('../images/bg-box-social.png');
+  padding-top: 50px;
+  padding-bottom: 58px;
+
+  &--body {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+    }
+    .block-subcriber {
+      padding-bottom: 30px;
+      @media screen and (min-width: 1024px) {
+        width: 50%;
+        padding-right: 40px;
+        padding-bottom: 0;
+      }
+    }
+
+    .sharethis-big {
+      @media screen and (min-width: 1024px) {
+        width: 50%;
+        padding-left: 40px;
+      }
+      .sharethis-big__icon__item:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+.block-image-full-width.block-image-full-width--has-botton {
+  margin-bottom: 15px;
 }

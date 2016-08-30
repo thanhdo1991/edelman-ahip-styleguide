@@ -3,15 +3,19 @@ $btn-bg-green: $green;
 .button {
   @include faricynew-bold;
   background-color: $btn-bg-green;
-  border: 1px solid $btn-bg-green;
   border-radius: rem(10px);
+  border: 1px solid $btn-bg-green;
   color: $white;
   display: inline-block;
   font-size: rem(14px);
+  line-height: 1.4;
   padding: rem(15px 30px);
   text-align: center;
   text-transform: uppercase;
-  line-height: 1.4;
+
+  @include susy-media(desktop) {
+    padding: rem(25px 46px);
+  }
 
   &:hover,
   &:focus,
@@ -26,9 +30,5 @@ $btn-bg-green: $green;
 
   &--full {
     width: 100%;
-  }
-
-  @include susy-media(desktop) {
-    padding: rem(25px 46px);
   }
 }

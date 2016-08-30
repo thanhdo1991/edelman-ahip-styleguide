@@ -125,6 +125,7 @@
 
   @include susy-media(desktop) {
     background-color: $green;
+    background-image: none;
     padding: rem(27px 0);
     text-align: center;
   }
