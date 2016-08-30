@@ -361,7 +361,7 @@ $tile-selector: '.tile';
     #{$tile-selector}__content {
       background-color: rgba($blue-dark, .9);
       display: none;
-      height: rem(370px);
+      //height: rem(370px);
       max-width: rem(511px);
       padding-top: rem(34px);
       padding-bottom: rem(35px);
