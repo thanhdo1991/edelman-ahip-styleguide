@@ -554,14 +554,18 @@
   <div class="component--item" id="video">
     <h2 class="component--title">video</h2>
     <div class="component--demo">
-      <div class="block-video">
+
+      <div class="block-video" style="background-image: url(images-demo/family_jump.jpg);">
         <div class="block-video__background">
-          <video class="block-video__video">
-            <source src="images-demo/media/video.mp4" type="video/mp4">
-              <source src="images-demo/media/video.ogv" type="video/ogg">
-                <source src="images-demo/media/video.webm" type="video/webm">
-                  Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+          <video class="block-video__bg-video" autoplay loop>
+            <source src="images-demo/media/hero-video.mp4" type="video/mp4">
+              <source src="images-demo/media/hero-video.ogv" type="video/ogv">
+                <source src="images-demo/media/hero-video.webm" type="video/webm">
+                  Your browser does not support HTML5 video.
           </video>
+        </div>
+        <div class="block-video__container">
+          <iframe src="https://www.youtube.com/embed/dxtVed45gVo"></iframe>
         </div>
         <div class="block-video__content">
           <div class="block-video__text">
@@ -580,14 +584,18 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="block-video">
+          <pre class="brush: php">
+<div class="block-video" style="background-image: url(images-demo/family_jump.jpg);">
   <div class="block-video__background">
-    <video class="block-video__video">
-      <source src="images-demo/media/video.mp4" type="video/mp4">
-      <source src="images-demo/media/video.ogv" type="video/ogg">
-      <source src="images-demo/media/video.webm" type="video/webm">
-      Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+    <video class="block-video__bg-video" autoplay loop>
+      <source src="images-demo/media/hero-video.mp4" type="video/mp4">
+      <source src="images-demo/media/hero-video.ogv" type="video/ogv">
+      <source src="images-demo/media/hero-video.webm" type="video/webm">
+      Your browser does not support HTML5 video.
     </video>
+  </div>
+  <div class="block-video__container">
+    <iframe src="https://www.youtube.com/embed/dxtVed45gVo"></iframe>
   </div>
   <div class="block-video__content">
     <div class="block-video__text">
@@ -1724,6 +1732,61 @@
     </div>
   </form>
 </div>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="component--item" id="video-stories">
+    <h2 class="component--title">video stories</h2>
+    <div class="component--demo">
+      <div class="block-video-stories">
+        <div class="block-video-stories__background">
+          <video class="block-video-stories__video">
+            <source src="images-demo/media/video.mp4" type="video/mp4">
+              <source src="images-demo/media/video.ogv" type="video/ogg">
+                <source src="images-demo/media/video.webm" type="video/webm">
+                  Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+          </video>
+        </div>
+        <div class="block-video-stories__container container">
+          <div class="tile__content">
+            <h3 class="tile__title">An Inspirational Comeback</h3>
+            <a class="tile__link" href="#">The story of willie gonzalez</a>
+          </div>
+        </div>
+        <div class="block-video-stories__player">
+          <span class="block-video-stories__icon">Icon</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <button class="show-code">Show/Hide Code</button>
+      <div class="component--source element-invisible">
+        <div class="component--html">
+          <h4 class="component--source--title">Markup</h4>
+          <pre class="brush: php"><div class="block-video-stories">
+  <div class="block-video-stories__background">
+    <video class="block-video-stories__video">
+      <source src="images-demo/media/video.mp4" type="video/mp4">
+      <source src="images-demo/media/video.ogv" type="video/ogg">
+      <source src="images-demo/media/video.webm" type="video/webm">
+      Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+    </video>
+  </div>
+  <div class="block-video-stories__container container">
+    <div class="tile__content">
+      <h3 class="tile__title">An Inspirational Comeback</h3>
+      <a class="tile__link" href="#">The story of willie gonzalez</a>
+    </div>
+  </div>
+  <div class="block-video-stories__player">
+    <span class="block-video-stories__icon">Icon</span>
+  </div>
+</div>
+
 </pre>
         </div>
       </div>

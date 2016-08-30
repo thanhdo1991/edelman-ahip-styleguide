@@ -2,6 +2,7 @@ $width-img: 262px;
 $heigh-img: 262px;
 $heigh-tile-big-img: 292px;
 $heigh-img-mobile: 200px;
+$tile-selector: '.tile';
 
 .tile {
   &__content {
@@ -73,7 +74,7 @@ $heigh-img-mobile: 200px;
     &--image {
       @extend %clearfix;
 
-      .tile__content {
+      #{$tile-selector}__content {
         @include susy-media(tablet) {
           border-radius: rem(9px 0 0 9px);
           float: left;
@@ -106,13 +107,13 @@ $heigh-img-mobile: 200px;
       }
     }
 
-    .tile__title {
+    #{$tile-selector}__title {
       @include susy-media(tablet) {
         font-size: rem(36px);
       }
     }
 
-    .tile__content {
+    #{$tile-selector}__content {
       border-radius: rem(0 0 9px 9px);
     }
   }

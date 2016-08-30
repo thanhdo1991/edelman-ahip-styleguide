@@ -1,0 +1,22 @@
+{% set body_class = "stories not-front" %}
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'Stories'} only %}
+{% endblock %}
+
+{% block content %}
+  {% include '../components/video-stories.twig' %}
+  {% include '../components/stories-filter.twig' %}
+  <div class="region-content-box-media">
+    <div class="box-media-grid">
+      {% include '../components/box-media-grid.twig' %}
+      <div class="container">
+        <div class="box-media--link">
+          <a href="/" class="button">Load more stories</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include '../components/block-image-full-width-has-button.twig' %}
+{% endblock %}
