@@ -5,6 +5,18 @@ $tile-selector: '.tile';
   height: rem(300px);
   position: relative;
   overflow: hidden;
+  background-color: $blue-dark;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0;
+
+  &.video-ready{
+    background-image: none !important;
+
+    #{$block-video-selector}__bg-video {
+      display: inline-block;
+    }
+  }
 
   @include susy-media(tablet) {
     height: rem(400px);
@@ -24,6 +36,7 @@ $tile-selector: '.tile';
     bottom: 0;
     top: 0;
     right: 0;
+    z-index: 1;
 
     &:before {
       background-color: rgba($gray-4c, .25);
@@ -48,6 +61,27 @@ $tile-selector: '.tile';
       top: 0;
       z-index: 1;
     }
+  }
+
+  &__container {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.5s ease-out 0s;
+    z-index: -5;
+
+    &.active {
+      opacity: 1;
+      z-index: 4;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 
   &__content {
@@ -168,25 +202,26 @@ $tile-selector: '.tile';
     }
   }
 
-  &__video {
+  &__bg-video {
     bottom: 0;
     left: 0;
     width: 100%;
-    min-width: rem($tablet);
+    // min-width: rem($tablet);
     position: absolute;
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
-    min-height: rem(300px);
+    // min-height: rem(300px);
+    display: none;
 
     @include susy-media(tablet) {
-      min-height: rem(400px);
-      min-width: rem($desktop);
+      // min-height: rem(400px);
+      // min-width: rem($desktop);
     }
 
     @include susy-media(desktop) {
-      min-width: rem($desktop-xxwide);
-      min-height: rem(560px);
+      // min-width: rem($desktop-xxwide);
+      // min-height: rem(560px);
     }
   }
 

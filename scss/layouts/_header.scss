@@ -1,10 +1,22 @@
 header {
+  background-color: $gray-ee;
+  background-image: url($image-path + 'bg-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: rem(50px);
   position: relative;
 
   @include susy-media(desktop) {
     min-height: rem(90px);
   }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .header-container {

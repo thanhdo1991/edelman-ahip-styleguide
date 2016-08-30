@@ -5,6 +5,21 @@
 
   &-wrapper {
     padding: rem(20px 0 15px);
+    position: relative;
+    background-color: saturate($blue-darken, 100%);
+
+    &:before {
+      background-image: url($image-path + 'bg-page-title.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: 0;
+      content: '';
+      left: 0;
+      opacity: .5;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 
     @include susy-media(tablet) {
       padding: rem(30px 0 25px);
