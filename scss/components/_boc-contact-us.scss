@@ -1,13 +1,37 @@
 .boc-contact-us {
+
+  @media screen and (min-width: 769px) {
+    .boc-contact-us__image {
+      position: relative;
+
+      &:before  {
+        background-image: url("../images/bg-about1.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 100%;
+        margin-top: -30%;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 60%;
+      }
+    }
+  }
   &__title {
     @include faricynew-bold;
     font-size: 12px;
     margin-bottom: 15px;
     text-transform: uppercase;
   }
+
   &__top {
     font-size: 18px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 769px) {
+      margin-bottom: 70px;
+    }
   }
   &__name {
     @include faricynew-medium;
