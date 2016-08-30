@@ -6,7 +6,6 @@ $heigh-img-mobile: 200px;
 .tile {
   &__content {
     @extend %flex-column-center;
-    background-color: $green;
     height: rem($heigh-img-mobile);
     padding: rem(20px);
     border-radius: rem(9px);

@@ -1,0 +1,71 @@
+{% set body_class = "stories" %}
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'Stories'} only %}
+{% endblock %}
+
+{% block content %}
+  <div class="main-content">
+    <div class="container">
+      <h1 class="node-title">Moises Brutus: An Inspirational Comeback</h1>
+      {% include '../components/box-sharethis-detail.twig' %}
+      <div class="body-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas vulputate magna ut tincidunt. Suspendisse potenti. Suspendisse in commodo erat. Aliquam nec velit nec est venenatis ultricies vel aliquet neque.</p>
+      </div>
+      <div class="video">
+        <iframe  src="https://www.youtube.com/embed/Lb9ULgYH0zo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <h2 class="headding">Lorem ipsum sit dolor necessitatum nostrud elit</h2>
+      <div class="content-bottom">
+        <p>Suspendisse in commodo erat. Aliquam nec velit nec est venenatis ultricies vel aliquet neque. Nam libe soluta nobis eligent optio est congue nihil impedit doming id Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas vulputate magna ut tincidunt. Suspendisse potenti. Suspendisse in commodo erat. Aliquam nec velit nec est venenatis ultricies vel aliquet neque.
+        </p>
+      </div>
+    </div>
+  </div>
+  {% include '../components/block-image-full-with-inner.twig' %}
+  <div class="region-content-bottom">
+    <div class="container">
+      <div class="content-field">
+        <p>Suspendisse in commodo erat. Aliquam nec velit nec est venenatis ultricies vel aliquet neque. Nam libe soluta nobis eligent optio est congue nihil impedit doming id Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam.</p>
+      </div>
+    </div>
+  </div>
+  <div class="region-bottom-content">
+    <div class="box-related-post">
+      <h2 class="box-related-title">related stories</h2>
+      <div class="box-media-grid box-media-grid--3">
+        <div class="container">
+          <div class="box-media-grid__list">
+            <div class="box-media-grid__item">
+             <div class="tile-small tile-small--image">
+              <div class="tile__content bg-blue-light">
+                <h3 class="tile__title">Charting A New Path Forward</h3>
+                <a class="tile__link" href="#">The story of celia bradshaw</a>
+              </div>
+              <div class="tile-small__image">
+                <img src="images-demo/related-img.png" alt="AHIP image demo" height="262" width="262">
+              </div>
+            </div>
+            </div>
+            <div class="box-media-grid__item">
+               <div class="tile-small">
+                  <div class="tile__content bg-blue-medium">
+                    <h3 class="tile__title">Medicare To The Rescue</h3>
+                    <a class="tile__link" href="#">The story of willie gonzalez</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block footer %}
+  {% include '../layouts/footer.twig' with {'has_social': ''} %}
+{% endblock %}

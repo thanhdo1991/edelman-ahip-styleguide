@@ -36,8 +36,12 @@
   &-blue {
      background-color: $blue1;
   }
+
+  &-blue-medium {
+     background-color: $blue3;
+  }
   &-blue-light {
-    background-color: $blue2;
+    background-color: $blue-light;
   }
   &--alto {
     background-color: $gray-e0;
