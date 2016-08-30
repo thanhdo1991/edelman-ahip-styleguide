@@ -1,17 +1,21 @@
 .about {
   .header  {
-    background-image: url('../images/bg-header.jpg')
+    background-image: url('../images/bg-header.jpg');
+    background-size: cover;
   }
 
   .main-content {
     position: relative;
-    padding-top: 70px;
+    padding-top: 30px;
     background-image: url("../images/bg-about123.png");
     margin-bottom: 30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
 
+    @media screen and (min-width: 769px) {
+      padding-top: 70px;
+    }
     .main-content-left {
       @media screen and (min-width: 769px) {
         float: left;
@@ -45,17 +49,16 @@
       }
     }
   }
+}
+.body-content {
+  font-size: 22px;
+  @include faricynew-light;
 
-  .about-content {
-    font-size: 22px;
-    @include faricynew-light;
-
-    h2 {
-      font-size: 42px;
-      @include nilland-extrabold;
-      color: $blue3;
-      margin-top: 45px;
-      margin-bottom: 15px;
-    }
+  h2 {
+    font-size: 42px;
+    @include nilland-extrabold;
+    color: $blue3;
+    margin-top: 45px;
+    margin-bottom: 15px;
   }
 }
