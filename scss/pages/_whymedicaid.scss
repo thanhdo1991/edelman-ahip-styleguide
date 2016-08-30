@@ -29,6 +29,8 @@ $main-content-selector: '.main-content';
   }
 
   .box-media-grid {
-    margin-bottom: rem(50px);
+    @include susy-media(tablet) {
+      margin-bottom: rem(50px);
+    }
   }
 }
