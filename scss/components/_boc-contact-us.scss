@@ -6,12 +6,16 @@
 
       &:before  {
         background-image: url("../images/bg-about1.png");
-        position: absolute;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
         content: "";
-        width: 382px;
-        height: 420px;
-        bottom: -255px;
+        height: 100%;
+        margin-top: -30%;
+        position: absolute;
         right: 0;
+        top: 100%;
+        width: 60%;
       }
     }
   }
