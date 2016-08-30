@@ -2,23 +2,47 @@
   .header  {
     background-image: url('../images/bg-header.jpg')
   }
+
   .main-content {
     position: relative;
     padding-top: 70px;
-    background-image: url('../images/bgabout.png');
+    background-image: url("../images/bg-about123.png");
     margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
 
     .main-content-left {
-      float: left;
-      width: 60%;
+      @media screen and (min-width: 769px) {
+        float: left;
+        width: 60%;
+      }
     }
 
     .main-content-right {
-      width: 40%;
-      position: absolute;
-      top: 75px;
-      right: 0;
-      padding-left: 50px;
+      .boc-contact-us__top {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .container {
+        margin: 0;
+      }
+      @media screen and (min-width: 769px) {
+        .boc-contact-us__top {
+          font-size: 18px;
+          margin-bottom: 70px;
+        }
+        width: 40%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        padding-left: 50px;
+        float: right;
+      }
+      @media screen and (min-width: 1366px) {
+        position: relative;
+        top: auto;
+      }
     }
   }
 
