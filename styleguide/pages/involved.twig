@@ -1,0 +1,25 @@
+{% set body_class = "involved" %}
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'Get involved'} only %}
+{% endblock %}
+
+{% block content %}
+  <div class="main-content">
+    <div class="container">
+      <div class="main-content-left">
+        <div class="body-content">
+          <p>Chasellus sit amet felis ut tortor scelerisque tincidunt vitae non purus. Donec tempor sem non nunc volutpat, sed vehicula odio dapibus. Vestibulum vulputate, neque et dictum cursus, felis nisl volutpat augue, vitae faucibus risus ante quis felis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include '../components/block-image-full-width.twig' %}
+  {% include '../components/form-involved.twig' %}
+{% endblock %}
+
+
+{% block footer %}
+  {% include '../layouts/footer.twig' with {'has_social': ''} %}
+{% endblock %}
