@@ -1,0 +1,35 @@
+.involved {
+  @extend .about;
+  .main-content {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 769px) {
+      padding-bottom: 60px;
+    }
+  }
+  .main-content-left {
+    @media screen and (min-width: 769px) {
+      float: none;
+      width: 100% !important;
+    }
+
+    @media screen and (min-width: 1024px) {
+      float: flet;
+      width: 60% !important;
+    }
+  }
+  .body-content {
+    padding-right: 25px;
+  }
+
+  .block-image-full-width__content.block-content-image {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 769px) {
+    .form--involved {
+      margin-bottom: 80px;
+    }
+  }
+}
