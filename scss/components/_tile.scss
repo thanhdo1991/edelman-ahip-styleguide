@@ -41,6 +41,10 @@ $tile-selector: '.tile';
     }
   }
 
+  &-simple {
+
+  }
+
   &-small {
     @extends %clearfix;
     margin-bottom: 20px;

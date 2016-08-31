@@ -67,3 +67,30 @@ body {
     }
   }
 }
+
+.main-content {
+  @extend %clearfix;
+  background-color: #fff;
+  background-image: url("../images/bg-main-gradient.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: rem(30px);
+  position: relative;
+
+  @media screen and (min-width: 769px) {
+    padding-top: rem(70px);
+  }
+}
+
+.post-content {
+  font-size: 22px;
+  @include faricynew-light;
+
+  h2 {
+    font-size: 42px;
+    @include nilland-extrabold;
+    color: $blue3;
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+}

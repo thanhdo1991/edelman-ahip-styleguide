@@ -1,25 +1,10 @@
 .page-resources {
-  .page-title-wrapper {
-
-  }
-
   .box-media--link {
     margin-top: rem(0);
     margin-bottom: rem(30px);
 
     @include susy-media(tablet) {
       margin-bottom: rem(60px);
-    }
-  }
-
-  .main {
-    background-image: url($image-path + 'bg-main-gradient.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: rem(30px);
-
-    @include susy-media(tablet) {
-      padding-top: rem(60px);
     }
   }
 }
