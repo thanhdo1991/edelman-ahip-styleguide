@@ -1,0 +1,24 @@
+{% set body_class = "page-resources" %}
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'Resources & News'} only %}
+{% endblock %}
+
+{% block content %}
+  <div class="main-content">
+    <div class="box-filter">
+      <div class="container">
+        <div class="stories-select">
+          <select data-placeholder="Filter by topic">
+            <option value="all">Filter by topic</option>
+            <option value="topic-1">Topic 1</option>
+            <option value="topic-2">Topic 2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    {% include '../components/box-media-filter.twig' %}
+  </div>
+{% endblock %}

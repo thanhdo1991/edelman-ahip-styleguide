@@ -7,16 +7,19 @@
 
 {% block content %}
   {% include '../components/video-stories.twig' %}
-  {% include '../components/stories-filter.twig' %}
-  <div class="region-content-box-media">
-    <div class="box-media-grid">
-      {% include '../components/box-media-grid.twig' %}
-      <div class="container">
-        <div class="box-media--link">
-          <a href="/" class="button">Load more stories</a>
-        </div>
+
+  <div class="box-filter">
+    <div class="container">
+      <div class="stories-select">
+        <select data-placeholder="View all stories">
+          <option value="all">View all stories</option>
+          <option value="stories-1">Stories 1</option>
+          <option value="stories-2">Stories 2</option>
+        </select>
       </div>
     </div>
   </div>
+
+  {% include '../components/box-media-stories-filter.twig' %}
   {% include '../components/block-image-full-width-has-button.twig' %}
 {% endblock %}

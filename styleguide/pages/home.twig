@@ -9,15 +9,13 @@
   {% include '../layouts/header.twig' with {'navigation': 'navigation-full'} %}
 
   {% include '../components/block-3col-info.twig' %}
-  <div class="region-content-box-media">
-    <div class="box-media-grid-1">
+  <div class="main-content">
+    <div class="box-media-latest">
       <h2 class="box-media--title">Latest resources & news</h2>
-      {% include '../components/box-media-grid-1.twig' %}
-      <div class="box-media--link">
-        <a href="/" class="button">View more news & resources</a>
-      </div>
+      {% include '../components/box-media-latest.twig' %}
     </div>
   </div>
+
   <div class="box-social">
     <div class="container">
       <div class="box-social--body">

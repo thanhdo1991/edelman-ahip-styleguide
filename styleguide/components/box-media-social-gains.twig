@@ -1,0 +1,29 @@
+<div class="box-media-grid">
+  <div class="container">
+    <div class="box-media-grid__list">
+      <div class="box-media-grid__item">
+        {% include "tile-big.twig" with {
+          'img_name': 'media-grids/media-grid-2.jpg',
+          'title': 'Back From the Brink',
+          'link_href': '/',
+          'link_text': 'The story of willie gonzalez'
+        } %}
+      </div>
+
+      <div class="box-media-grid__item">
+        {% include "tile-simple.twig" with {
+          'img_name': 'media-grids/media-grid2.png',
+          'title': 'Lorem ipsum dolor sit amet consectetaur adipisicing elit sed do.',
+          'subcription': 'july 12, 2015 by john doe in <a href="/" class="link">INNOVATIONS</a>'
+        } %}
+      </div>
+
+      <div class="box-media-grid__item">
+        {% include "tile-simple.twig" with {
+          'title': 'Lorem ipsum dolor sit amet consectetaur adipisicing eclit sed do eiusmod tempor incididunt.',
+          'subcription': 'july 12, 2015 by john doe in <a href="/" class="link">INNOVATIONS</a>'
+        } %}
+      </div>
+    </div>
+  </div>
+</div>
