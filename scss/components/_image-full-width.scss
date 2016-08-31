@@ -13,21 +13,25 @@
     border-top: 5px solid $blue3;
     margin: 0 auto;
     width: 100%;
-    min-height: 400px;
     padding: 20px;
     position: relative;
     z-index: 1;
 
     @media screen and (min-width: 769px) {
       margin: -212px auto 0;
-      padding: 65px 80px;
       max-width: 650px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding: 65px 80px;
     }
 
     .block-content-image__body {
       @include faricynew-light;
       font-size: 22px;
-      margin-bottom: 35px;
+      @media screen and (min-width: 769px) {
+        margin-bottom: 35px;
+      }
     }
   }
 
@@ -51,16 +55,19 @@
       background-color: rgba(0, 118, 182, 0.9);
       border-top: 0;
       color: $white;
-      height: 320px;
 
       @media screen and (min-width: 769px) {
         left: 50%;
         margin-left: -360px;
-        margin-top: -160px;
+        margin-top: -100px;
         max-width: 680px;
         min-height: auto;
         position: absolute;
         top: 50%;
+      }
+
+      @media screen and (min-width: 1366px) {
+        margin-top: -160px;
       }
     }
 
