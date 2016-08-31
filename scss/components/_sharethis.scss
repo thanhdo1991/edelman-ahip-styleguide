@@ -8,7 +8,7 @@
     }
 
     &__item {
-      margin: 0 20px 20px 0;
+      margin: 0 0 20px 0;
       border-radius: 7px;
       @media screen and (min-width: 567px) {
         margin: 0 20px 0 0;
@@ -33,8 +33,8 @@
         background: rgba(255, 255, 255, 0.05);
         padding-bottom: 20px;
         padding-left: 29px;
-        padding-right: 60px;
-        padding-top: 20px;
+        padding-right: 30px;
+        padding-top: 30px;
         line-height: 1;
         font-size: 14px;
         text-transform: uppercase;
@@ -50,18 +50,22 @@
         line-height: 0;
         padding-top: 13px;
         padding-left: 25px;
-        margin-bottom: -5px;
+        margin-bottom: 1px;
         height: 100%;
         padding-right: 15px;
       }
 
-      .fa-facebook{
+      .icon-facebook{
         font-size: 60px;
       }
 
       span.icontwitter {
         font-size: 40px;
-        padding: 1px 15px;
+        padding: 10px 15px 1px;
+      }
+
+      &:hover {
+        color: $white;
       }
     }
   }
