@@ -173,6 +173,10 @@
     isThis.find(ahip_stories_video)[0].onended = function () {
       isThis.removeClass(videoPlay);
     }
+
+    isThis.find(ahip_stories_video)[0].onpause = function () {
+      isThis.removeClass(videoPlay);
+    }
   });
 
   $('.stories-select select').chosen({

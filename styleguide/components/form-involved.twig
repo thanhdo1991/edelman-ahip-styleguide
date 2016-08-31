@@ -1,22 +1,23 @@
-{% block forminvolved %}
-<div class="container">
-  <form class="form--involved">
+<form class="form--involved">
+  <div class="container">
     <div class="form-wrapper">
-      <div class="form-type-textfield">
-        <label>email address</label>
-        <input type="email" maxlength="60" size="60" class="form-text">
-      </div>
-      <div class="form-type-textfield">
-        <label>first name</label>
-        <input type="text" maxlength="60" size="60" class="form-text">
-      </div>
-      <div class="form-type-textfield">
-        <label>last name</label>
-        <input type="text" maxlength="60" size="60" class="form-text">
-      </div>
-      <div class="form-type-textfield">
-        <label>postal code</label>
-        <input type="text" maxlength="60" size="60" class="form-text">
+      <div class="form-type-wrapper">
+        <div class="form-type-textfield">
+          <label>email address</label>
+          <input type="email" maxlength="60" size="60" class="form-text">
+        </div>
+        <div class="form-type-textfield">
+          <label>first name</label>
+          <input type="text" maxlength="60" size="60" class="form-text">
+        </div>
+        <div class="form-type-textfield">
+          <label>last name</label>
+          <input type="text" maxlength="60" size="60" class="form-text">
+        </div>
+        <div class="form-type-textfield form-half-width">
+          <label>postal code</label>
+          <input type="text" maxlength="60" size="60" class="form-text">
+        </div>
       </div>
       <div class="form-type-textarea">
         <label>Tell us your story</label>
@@ -28,6 +29,5 @@
     <div class="form-actions">
       <input type="submit" class="form-submit" value="Submit your story now">
     </div>
-  </form>
-</div>
-{% endblock %}
+  </div>
+</form>

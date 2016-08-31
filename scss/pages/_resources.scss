@@ -1,0 +1,10 @@
+.page-resources {
+  .box-media--link {
+    margin-top: rem(0);
+    margin-bottom: rem(30px);
+
+    @include susy-media(tablet) {
+      margin-bottom: rem(60px);
+    }
+  }
+}

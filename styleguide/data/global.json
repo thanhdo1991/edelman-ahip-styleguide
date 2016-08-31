@@ -82,26 +82,6 @@
       "group":"component"
     },
     {
-      "name":"box-media-grid",
-      "group":"component"
-    },
-    {
-      "name":"box-media-grid-1",
-      "group":"component"
-    },
-    {
-      "name":"box-media-grid-2",
-      "group":"component"
-    },
-    {
-      "name":"box-media-grid-3",
-      "group":"component"
-    },
-    {
-      "name":"box-media-grid-4",
-      "group":"component"
-    },
-    {
       "name":"box-contact-us",
       "group":"component"
     },
@@ -137,11 +117,11 @@
     },
     {
        "name":"get involved",
-       "link":"getinvolved.html"
+       "link":"involved.html"
     },
     {
        "name":"resource & news",
-       "link":"news.html"
+       "link":"resources.html"
     },
     {
        "name":"about the alliance",

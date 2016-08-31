@@ -1,6 +1,6 @@
 header {
   background-color: $gray-ee;
-  background-image: url($image-path + 'bg-header.png');
+  background-image: url($image-path + 'bg-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: rem(50px);
@@ -21,10 +21,12 @@ header {
 
 .header-container {
   @extend %clearfix;
-  padding: rem(12px 10px);
+  padding-top: rem(12px);
+  padding-bottom: rem(12px);
 
   @include susy-media(desktop) {
-    padding: rem(0 10px);
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

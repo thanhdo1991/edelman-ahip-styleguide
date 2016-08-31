@@ -1,0 +1,30 @@
+{% set body_class = "page-whymedicaid" %}
+{% extends '../layouts/layout.twig' %}
+
+{% block title %}
+  {% include '../components/page-title.twig' with {'page_title': 'Why medicaid?'} only %}
+{% endblock %}
+
+{% block content %}
+  <div class="main-content">
+    <div class="container">
+      <div class="main-content-left">
+        <div class="body-content">
+          <p>Medicaid is the largest health care program in the country – and growing – providing care to 70 million Americans, roughly 20% of the U.S. population. Across the country, 1 out of 3 children receives Medicaid/CHIP benefits.
+          </p>
+          <p>
+          Medicaid has become a proving ground for health care innovation, and the program has made huge strides in social gains, cost savings, and health outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include '../components/block-image-full-width.twig' %}
+  {% include '../components/box-media-social-gains.twig' %}
+
+  {% include '../components/block-image-full-width.twig' %}
+  {% include '../components/box-media-cost-savings.twig' %}
+
+  {% include '../components/block-image-full-width.twig' %}
+  {% include '../components/box-media-health-outcomes.twig' %}
+
+{% endblock %}

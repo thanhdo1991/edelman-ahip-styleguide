@@ -2,10 +2,10 @@
   @extend .about;
   .main-content {
     margin-bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
 
     @media screen and (min-width: 769px) {
-      padding-bottom: 60px;
+      padding-bottom: rem(60px);
     }
   }
   .main-content-left {
@@ -19,17 +19,18 @@
       width: 60% !important;
     }
   }
-  .body-content {
-    padding-right: 25px;
+
+  .post-content {
+    padding-right: rem(25px);
   }
 
   .block-image-full-width__content.block-content-image {
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
   }
 
   @media screen and (min-width: 769px) {
     .form--involved {
-      margin-bottom: 80px;
+      margin-bottom: rem(80px);
     }
   }
 }

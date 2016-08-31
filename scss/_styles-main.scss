@@ -43,8 +43,7 @@
 
 // Component
 @import 'components/block-3-col';
-@import 'components/tile-small';
-@import 'components/tile-big';
+@import 'components/tile';
 @import 'components/video';
 @import 'components/block-search';
 @import 'components/sharethis';
@@ -55,8 +54,13 @@
 @import 'components/page-title';
 @import 'components/stories-select';
 
+// Blocks.
+@import 'blocks/index-links';
+
 // Pages
 @import 'pages/index';
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/involved';
+@import 'pages/whymedicaid';
+@import 'pages/resources';

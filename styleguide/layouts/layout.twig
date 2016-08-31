@@ -18,6 +18,7 @@
     {% block footer %}
       {% include 'footer.twig' with {'has_social': 'true'} %}
     {% endblock %}
+    {% include "../blocks/index-links.twig" %}
     {% block footer_scripts %}
       <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
       <script src="../js/lib/modernizr.min.js"></script>

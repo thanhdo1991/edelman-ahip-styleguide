@@ -88,8 +88,6 @@ $susy-media: (
 
 .container {
   @include container();
-  padding-left: rem(10px);
-  padding-right: rem(10px);
 
   @include susy-media(tablet) {
     @include container($susy-tablet);
@@ -97,5 +95,7 @@ $susy-media: (
 
   @include susy-media(desktop) {
     @include container($susy-desktop);
+    padding-left: rem(10px);
+    padding-right: rem(10px);
   }
 }
