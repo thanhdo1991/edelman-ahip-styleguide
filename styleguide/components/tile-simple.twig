@@ -1,3 +1,22 @@
-{% block tilesimple %}
+{% if img_name is not empty %}
+  {% set tile_class = 'tile-simple--image' %}
+{% endif %}
 
-{% endblock %}
+<div class="tile-simple {{tile_class}}">
+  {% if img_name is not empty %}
+  <div class="tile-simple__img">
+    <img src="{{img_path}}{{img_name}}">
+  </div>
+  {% endif %}
+  <h2 class="tile__title">{{title}}</h2>
+  <div class="tile__footer">
+    <div class="tile__subcription">
+      {{subcription}}
+    </div>
+    {% if remove_icon is empty %}
+    <div class="icon">
+      <a href="#">icon</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
