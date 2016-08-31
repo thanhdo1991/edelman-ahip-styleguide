@@ -8,15 +8,7 @@ $tile-selector: '.tile';
   background-color: $blue-dark;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 0;
-
-  &.video-ready{
-    background-image: none !important;
-
-    #{$block-video-selector}__bg-video {
-      display: inline-block;
-    }
-  }
+  background-size: cover;
 
   @include susy-media(tablet) {
     height: rem(400px);
@@ -29,6 +21,15 @@ $tile-selector: '.tile';
   @include susy-media(desktopWide) {
     height: rem(810px);
   }
+
+  .no-touch &.video-ready {
+    background-image: none !important;
+
+    #{$block-video-selector}__bg-video {
+      display: inline-block;
+    }
+  }
+
 
   &__background {
     position: absolute;
@@ -94,7 +95,7 @@ $tile-selector: '.tile';
     z-index: 3;
 
     @include susy-media(desktop) {
-      width: 70%;
+      width: 75%;
     }
 
     @include susy-media(desktopWide) {
@@ -214,6 +215,12 @@ $tile-selector: '.tile';
     // min-height: rem(300px);
     display: none;
 
+
+    // Hidden video in touch device.
+    .touch & {
+      display: none;
+    }
+
     @include susy-media(tablet) {
       // min-height: rem(400px);
       // min-width: rem($desktop);
@@ -237,6 +244,22 @@ $tile-selector: '.tile';
     display: inline-block;
     margin: 0 auto;
     text-align: center;
+  }
+
+  &__close-btn {
+    color: $white;
+    font-size: rem(12px);
+    font-weight: 700;
+    position: absolute;
+    right: rem(15px);
+    text-transform: uppercase;
+    top: rem(15px);
+    z-index: 100;
+
+    &:focus,
+    &:visited {
+      color: $white;
+    }
   }
 
   &.playing {

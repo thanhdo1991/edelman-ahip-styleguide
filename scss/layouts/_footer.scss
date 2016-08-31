@@ -1,11 +1,11 @@
 .footer {
   @include faricynew-bold;
+  background-image: url($image-path + 'bg-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: rem(12px);
   padding: rem(25px 0);
   z-index: 9;
-  background-image: url($image-path + 'bg-footer.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 
   @include susy-media(tablet) {
     padding: rem(47px 0 50px);
@@ -23,7 +23,6 @@
 
   .site-info {
     margin-bottom: rem(10px);
-    white-space: nowrap;
     text-transform: uppercase;
 
     @include susy-media(tablet) {
