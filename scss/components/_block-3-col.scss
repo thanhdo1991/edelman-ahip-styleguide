@@ -18,7 +18,7 @@
     position: relative;
     background-color: $blue;
     text-align: center;
-    min-height: rem(200px);
+    min-height: rem(250px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,15 +29,20 @@
     }
 
     &:before {
-      background-size: cover;
+      background-position: center center;
       background-repeat: no-repeat;
-      content: '';
-      position: absolute;
-      top: 0;
+      background-size: cover;
       bottom: 0;
-      right: 0;
+      content: '';
       left: 0;
       opacity: .25;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      @include susy-media(tablet) {
+        background-position: 0 0;
+      }
     }
   }
 
@@ -122,6 +127,10 @@
     text-align: left;
     color: $blue-dark;
     text-transform: uppercase;
+
+    @include susy-media(tabletOnly) {
+      font-size: rem(30px);
+    }
 
     @include susy-media(desktop) {
       line-height: 1;

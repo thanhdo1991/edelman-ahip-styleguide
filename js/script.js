@@ -87,6 +87,7 @@
       bgVideo = $('.block-video__bg-video', heroVideo);
       playbackVideo = $('.block-video__icon', heroVideo);
       containerHeroVideo = $('.block-video__container', heroVideo);
+      closeHeroVideo = $('.block-video__close-btn', heroVideo);
 
       addParams = 'controls=1&showinfo=0&rel=0&wmode=transparent';
       if (videoSrc.indexOf('?') > -1) {
@@ -108,6 +109,13 @@
       bgVideo[0].oncanplay = function () {
         heroVideo.addClass('video-ready');
       }
+
+      closeHeroVideo.on('click', function(e) {
+        e.preventDefault();
+        params = '?controls=0&showinfo=0&rel=0&wmode=transparent';
+        ytHeroVideo.attr('src', videoSrc.replace(/(youtube.com.+\?).+/, '$1' + params));
+        containerHeroVideo.removeClass('active');
+      });
     }
   }
 
