@@ -1,7 +1,7 @@
-.boc-contact-us {
+.box-contact-us {
 
   @media screen and (min-width: 769px) {
-    .boc-contact-us__image {
+    .box-contact-us__image {
       position: relative;
 
       &:before  {
@@ -39,5 +39,13 @@
   }
   &__number {
     @include faricynew-lightitalic;
+  }
+}
+
+.component--demo {
+  .boc-contact-us__image {
+    &:before  {
+      display: none;
+    }
   }
 }
