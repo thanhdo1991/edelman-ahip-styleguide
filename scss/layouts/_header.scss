@@ -25,7 +25,8 @@ header {
   padding-bottom: rem(12px);
 
   @include susy-media(desktop) {
-    // padding: rem(0 10px);
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
