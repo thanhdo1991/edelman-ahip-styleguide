@@ -108,15 +108,19 @@
   ],
   "prototype_nav":[
     {
-       "name":"Why medicaid?",
+       "name":"Home",
+       "link":"home.html"
+    },
+    {
+       "name":"Why Medicaid?",
        "link":"whymedicaid.html"
     },
     {
-       "name":"stories?",
+       "name":"Stories?",
        "link":"stories.html"
     },
     {
-       "name":"get involved",
+       "name":"Get Involved",
        "link":"involved.html"
     },
     {
@@ -124,7 +128,7 @@
        "link":"resources.html"
     },
     {
-       "name":"about the alliance",
+       "name":"About the Alliance",
        "link":"about.html"
     }
  ]
