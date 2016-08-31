@@ -21,10 +21,11 @@ header {
 
 .header-container {
   @extend %clearfix;
-  padding: rem(12px 10px);
+  padding-top: rem(12px);
+  padding-bottom: rem(12px);
 
   @include susy-media(desktop) {
-    padding: rem(0 10px);
+    // padding: rem(0 10px);
   }
 }
 
