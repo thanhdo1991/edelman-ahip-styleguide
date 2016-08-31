@@ -1,5 +1,7 @@
+{% set background_image = 'bg-image-hero-video.jpg' %}
+
 {% block videostories %}
-<div class="block-video-stories">
+<div class="block-video-stories" style="background-image: url({{ img_path ~ background_image }});">
   <div class="block-video-stories__background">
     <video class="block-video-stories__video">
       <source src="{{img_path}}media/video.mp4" type="video/mp4">

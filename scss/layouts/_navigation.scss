@@ -15,6 +15,7 @@
   width: rem(26px);
   z-index: 1;
   transform: translate(0, -50%);
+  border-radius: 0;
 
   @include susy-media(desktop) {
     display: none !important;
