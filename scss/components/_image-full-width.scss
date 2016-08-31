@@ -13,7 +13,6 @@
     border-top: 5px solid $blue3;
     margin: 0 auto;
     width: 100%;
-    min-height: 400px;
     padding: 20px;
     position: relative;
     z-index: 1;
@@ -27,7 +26,9 @@
     .block-content-image__body {
       @include faricynew-light;
       font-size: 22px;
-      margin-bottom: 35px;
+      @media screen and (min-width: 769px) {
+        margin-bottom: 35px;
+      }
     }
   }
 
@@ -51,7 +52,6 @@
       background-color: rgba(0, 118, 182, 0.9);
       border-top: 0;
       color: $white;
-      height: 320px;
 
       @media screen and (min-width: 769px) {
         left: 50%;
