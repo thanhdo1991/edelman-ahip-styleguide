@@ -49,6 +49,7 @@
         list-style: none;
         display: inline-block;
         margin-left: rem(7px);
+        vertical-align: middle;
       }
     }
 
@@ -59,10 +60,9 @@
       display: block;
       font-size: 0;
       height: rem(32px);
-      line-height: rem(32px);
-      text-align: center;
       text-indent: -999em;
       width: rem(32px);
+      position: relative;
 
       &.twitter {
         background-color: $blue-lighter;
@@ -73,8 +73,12 @@
       }
 
       &:before {
-        vertical-align: middle;
         font-size: rem(20px);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-indent: 0;
       }
 
       &:hover {
