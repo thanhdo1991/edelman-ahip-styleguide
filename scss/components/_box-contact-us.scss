@@ -41,3 +41,11 @@
     @include faricynew-lightitalic;
   }
 }
+
+.component--demo {
+  .boc-contact-us__image {
+    &:before  {
+      display: none;
+    }
+  }
+}
