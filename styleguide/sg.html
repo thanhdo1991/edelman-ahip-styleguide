@@ -1083,21 +1083,23 @@
       <form class="form--involved">
         <div class="container">
           <div class="form-wrapper">
-            <div class="form-type-textfield">
-              <label>email address</label>
-              <input type="email" maxlength="60" size="60" class="form-text">
-            </div>
-            <div class="form-type-textfield">
-              <label>first name</label>
-              <input type="text" maxlength="60" size="60" class="form-text">
-            </div>
-            <div class="form-type-textfield">
-              <label>last name</label>
-              <input type="text" maxlength="60" size="60" class="form-text">
-            </div>
-            <div class="form-type-textfield">
-              <label>postal code</label>
-              <input type="text" maxlength="60" size="60" class="form-text">
+            <div class="form-type-wrapper">
+              <div class="form-type-textfield">
+                <label>email address</label>
+                <input type="email" maxlength="60" size="60" class="form-text">
+              </div>
+              <div class="form-type-textfield">
+                <label>first name</label>
+                <input type="text" maxlength="60" size="60" class="form-text">
+              </div>
+              <div class="form-type-textfield">
+                <label>last name</label>
+                <input type="text" maxlength="60" size="60" class="form-text">
+              </div>
+              <div class="form-type-textfield form-half-width">
+                <label>postal code</label>
+                <input type="text" maxlength="60" size="60" class="form-text">
+              </div>
             </div>
             <div class="form-type-textarea">
               <label>Tell us your story</label>
@@ -1120,21 +1122,23 @@
           <pre class="brush: php"><form class="form--involved">
   <div class="container">
     <div class="form-wrapper">
-      <div class="form-type-textfield">
-        <label>email address</label>
-        <input type="email" maxlength="60" size="60" class="form-text">
-      </div>
-      <div class="form-type-textfield">
-        <label>first name</label>
-        <input type="text" maxlength="60" size="60" class="form-text">
-      </div>
-      <div class="form-type-textfield">
-        <label>last name</label>
-        <input type="text" maxlength="60" size="60" class="form-text">
-      </div>
-      <div class="form-type-textfield">
-        <label>postal code</label>
-        <input type="text" maxlength="60" size="60" class="form-text">
+      <div class="form-type-wrapper">
+        <div class="form-type-textfield">
+          <label>email address</label>
+          <input type="email" maxlength="60" size="60" class="form-text">
+        </div>
+        <div class="form-type-textfield">
+          <label>first name</label>
+          <input type="text" maxlength="60" size="60" class="form-text">
+        </div>
+        <div class="form-type-textfield">
+          <label>last name</label>
+          <input type="text" maxlength="60" size="60" class="form-text">
+        </div>
+        <div class="form-type-textfield form-half-width">
+          <label>postal code</label>
+          <input type="text" maxlength="60" size="60" class="form-text">
+        </div>
       </div>
       <div class="form-type-textarea">
         <label>Tell us your story</label>
@@ -1157,7 +1161,8 @@
   <div class="component--item" id="video-stories">
     <h2 class="component--title">video stories</h2>
     <div class="component--demo">
-      <div class="block-video-stories">
+
+      <div class="block-video-stories" style="background-image: url(images-demo/bg-image-hero-video.jpg);">
         <div class="block-video-stories__background">
           <video class="block-video-stories__video">
             <source src="images-demo/media/video.mp4" type="video/mp4">
@@ -1183,7 +1188,8 @@
       <div class="component--source element-invisible">
         <div class="component--html">
           <h4 class="component--source--title">Markup</h4>
-          <pre class="brush: php"><div class="block-video-stories">
+          <pre class="brush: php">
+<div class="block-video-stories" style="background-image: url(images-demo/bg-image-hero-video.jpg);">
   <div class="block-video-stories__background">
     <video class="block-video-stories__video">
       <source src="images-demo/media/video.mp4" type="video/mp4">
