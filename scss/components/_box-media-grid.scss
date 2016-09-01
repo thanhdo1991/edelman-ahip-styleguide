@@ -1,4 +1,4 @@
-%2col-normal {
+%twocolnormal {
   @extend %clearfix;
 
   .box-media-grid__item {
@@ -24,7 +24,7 @@
   }
 }
 
-%2col-big {
+%twocolbig {
   @extend %clearfix;
 
   .box-media-grid__item {
@@ -68,12 +68,12 @@
 
 .box-media__resources {
   .box-media-grid__list {
-    @extend %2col-normal;
+    @extend %twocolnormal;
   }
 }
 
 .box-media__stories {
   .box-media-grid__list {
-    @extend %2col-big;
+    @extend %twocolbig;
   }
 }
