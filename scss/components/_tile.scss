@@ -1,53 +1,83 @@
-$width-img: 262px;
-$heigh-img: 262px;
-$heigh-tile-big-img: 292px;
-$heigh-img-mobile: 200px;
+$width-img: rem(262px);
+$heigh-img: rem(262px);
+$heigh-tile-big-img: rem(292px);
+$heigh-img-mobile: rem(200px);
 $tile-selector: '.tile';
 
+.tile-small {
+  &.bg--mercury {
+    color: $gray-33;
+  }
+}
+
 .tile {
+  &-small,
+  &-simple,
+  &-big {
+    border-radius: rem(9px);
+  }
+
   &__content {
     @extend %flex-column-center;
-    // background-color: $green;
     height: rem($heigh-img-mobile);
-    padding: rem(20px);
-    border-radius: rem(9px);
+    padding: rem(20px 10px 20px 20px);
 
     @include susy-media(tablet) {
-      padding: rem(32px 37px 34px);
+      padding: rem(32px 20px 34px 37px);
       height: $heigh-img;
     }
   }
 
   &__title {
     @include faricynew-bold;
-    color: $white;
     font-size: rem(28px);
-    text-transform: capitalize;
   }
 
-  &__link {
+  &__subcription {
     @include faricynew-bold;
     font-size: rem(12px);
     text-transform: uppercase;
 
-    &,
-    &:active,
-    &:visited {
-      color: $white;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__footer {
+    position: relative;
+
+    .tile__subcription {
+      padding-right: rem(30px);
     }
 
-    &:hover {
-      color: darken($white, 10%);
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 
   &-simple {
+    &__img {
+      line-height: 0;
+    }
 
+    .icon a {
+      background: url($image-path + 'icon-more.png') center center no-repeat scroll transparent;
+      float: left;
+      height: rem(16px);
+      opacity: 0.8;
+      text-indent: rem(-9999px);
+      width: rem(20px);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   &-small {
     @extends %clearfix;
-    margin-bottom: 20px;
 
     &__image {
       line-height: 0;
@@ -59,19 +89,6 @@ $tile-selector: '.tile';
       @include susy-media(tablet) {
         float: right;
         margin: 0;
-      }
-
-      img {
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border-radius: rem(0 0 9px 9px);
-
-        @include susy-media(tablet) {
-          border-radius: rem(0 9px 9px 0);
-        }
       }
     }
 
