@@ -50,14 +50,6 @@
       "group":"component"
     },
     {
-      "name":"tile-small",
-      "group":"component"
-    },
-    {
-      "name":"tile-big",
-      "group":"component"
-    },
-    {
       "name":"video",
       "group":"component"
     },
